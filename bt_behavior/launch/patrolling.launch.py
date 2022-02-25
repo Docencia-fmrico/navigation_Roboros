@@ -11,19 +11,23 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+import os
 
+from ament_index_python import get_package_share_directory
 from launch import LaunchDescription
 from launch_ros.actions import Node
 
 
 def generate_launch_description():
-
+    pkg_dir = get_package_share_directory('bt_behavior')
+    config_dir = os.path.join(pkg_dir, 'config')
+    config_file = os.path.join(config_dir, 'waypoints.yaml')
     patrolling_cmd = Node(
         package='bt_behavior',
         executable='patrolling_main',
-        parameters=[{
-          'use_sim_time': True
-        }],
+        parameters=[
+          config_file,
+        ],
         remappings=[
           ('input_scan', '/scan_raw'),
           ('output_vel', '/nav_vel')

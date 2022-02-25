@@ -13,6 +13,7 @@
 // limitations under the License.
 
 #include <string>
+#include <vector>
 #include <memory>
 
 #include "behaviortree_cpp_v3/behavior_tree.h"
@@ -31,6 +32,12 @@ int main(int argc, char * argv[])
 
   auto node = rclcpp::Node::make_shared("patrolling_node");
 
+  node->declare_parameter("waypoints");
+  rclcpp::Parameter param("waypoints", std::vector<std::string>({}));
+  node->get_parameter("waypoints", param);
+  std::vector<std::string> waypoints = param.as_string_array();
+  std::cout << waypoints.size() << std::endl;
+
   BT::BehaviorTreeFactory factory;
   BT::SharedLibrary loader;
 
@@ -38,7 +45,7 @@ int main(int argc, char * argv[])
   factory.registerFromPlugin(loader.getOSName("br2_patrol_bt_node"));
 
   std::string pkgpath = ament_index_cpp::get_package_share_directory("bt_behavior");
-  std::string xml_file = pkgpath + "/behavior_tree_xml/behavior.xml";
+  std::string xml_file = pkgpath + "/behavior_tree_xml/simple.xml";
 
   auto blackboard = BT::Blackboard::create();
   blackboard->set("node", node);
