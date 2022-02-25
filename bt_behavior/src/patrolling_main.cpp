@@ -37,7 +37,16 @@ int main(int argc, char * argv[])
   node->get_parameter("waypoints", param);
   std::vector<std::string> waypoints = param.as_string_array();
   std::cout << waypoints.size() << std::endl;
-
+  RCLCPP_INFO(node->get_logger(), "%d", waypoints.size());
+  std::vector<std::vector<long int>> wps;
+  for (int i = 0; i < 2; i++) {
+    std::string wp ="wp" + std::to_string(i);
+    rclcpp::Parameter param(wp, std::vector<long int>({}));
+    node->get_parameter(wp, param);
+    //wps.push_back(param.as_integer_array());
+    std::cout << param.as_integer_array()[0];
+  }
+  
   BT::BehaviorTreeFactory factory;
   BT::SharedLibrary loader;
 
