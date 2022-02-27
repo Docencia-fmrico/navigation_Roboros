@@ -40,6 +40,8 @@ void
 Move::on_tick()
 {
   geometry_msgs::msg::PoseStamped goal;
+  std::cout << "Moving to waypoint!!!" << std::endl;
+
   getInput("goal", goal);
 
   goal_.pose = goal;

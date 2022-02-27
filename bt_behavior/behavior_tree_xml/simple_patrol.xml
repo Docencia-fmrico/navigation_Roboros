@@ -5,8 +5,6 @@
         <KeepRunningUntilFailure>
             <ReactiveSequence>
                 <Sequence>
-                    <Action ID="GetWaypoint" waypoint="{wp}"/>
-                    <Action ID="Move" goal="{wp}"/>
                     <Action ID="Patrol"/>
                 </Sequence>
             </ReactiveSequence>
