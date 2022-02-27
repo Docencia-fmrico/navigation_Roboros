@@ -56,6 +56,7 @@ Patrol::tick()
   vel_pub_->publish(vel_msgs);
 
   auto elapsed = node_->now() - start_time_;
+  std::cout << "Doing a spin" << std::endl;
 
   if (elapsed < 15s) {
     return BT::NodeStatus::RUNNING;

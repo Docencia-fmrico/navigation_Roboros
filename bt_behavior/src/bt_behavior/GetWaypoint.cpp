@@ -35,8 +35,6 @@ GetWaypoint::GetWaypoint(
 : BT::ActionNodeBase(xml_tag_name, conf)
 {
   config().blackboard->get("node", node_);
-
-  vel_pub_ = node_->create_publisher<geometry_msgs::msg::Twist>("/output_vel", 100);
 }
 
 void
@@ -48,10 +46,20 @@ GetWaypoint::halt()
 BT::NodeStatus
 GetWaypoint::tick()
 {
-    int next;
-    getInput("wp_id", next);
-    std::cout << "GetWaypoint Tick " << next <<std::endl;
-    return BT::NodeStatus::SUCCESS;
+  // Deberia hacer un getOutput id waypoint, aqui se rellena un punto a mano para probar
+  geometry_msgs::msg::PoseStamped wp;
+  wp.pose.position.x = 0.97;
+  wp.pose.position.y = -0.65;
+  wp.pose.position.z = 0;
+  wp.pose.orientation.x = 0;
+  wp.pose.orientation.y = 0;
+  wp.pose.orientation.z = 0;
+  wp.pose.orientation.w = 1;
+  setOutput("waypoint", wp);
+
+
+  std::cout << "I've just sent the waypoint" << std::endl;
+  return BT::NodeStatus::SUCCESS;
 }
 
 }  // namespace bt_behavior

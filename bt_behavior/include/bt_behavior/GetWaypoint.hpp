@@ -12,8 +12,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#ifndef BT_BEHAVIOR__PATROL_HPP_
-#define BT_BEHAVIOR__PATROL_HPP_
+#ifndef BT_BEHAVIOR__GETWAYPOINT_HPP_
+#define BT_BEHAVIOR__GETWAYPOINT_HPP_
 
 #include <string>
 
@@ -21,7 +21,7 @@
 #include "behaviortree_cpp_v3/bt_factory.h"
 
 #include "geometry_msgs/msg/twist.hpp"
-
+#include "geometry_msgs/msg/pose_stamped.hpp"
 #include "rclcpp/rclcpp.hpp"
 
 namespace bt_behavior
@@ -39,7 +39,7 @@ public:
 
   static BT::PortsList providedPorts()
   {
-    return BT::PortsList({});
+    return BT::PortsList({BT::OutputPort<geometry_msgs::msg::PoseStamped>("waypoint")});
   }
 
 private:
@@ -50,4 +50,4 @@ private:
 
 }  // namespace bt_behavior
 
-#endif  // BT_BEHAVIOR__PATROL_HPP_
+#endif  // BT_BEHAVIOR__GETWAYPOINT_HPP_

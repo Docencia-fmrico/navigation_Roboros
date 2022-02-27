@@ -20,37 +20,40 @@
 #include "behaviortree_cpp_v3/bt_factory.h"
 #include "behaviortree_cpp_v3/utils/shared_library.h"
 #include "behaviortree_cpp_v3/loggers/bt_zmq_publisher.h"
-
 #include "ament_index_cpp/get_package_share_directory.hpp"
-
 #include "rclcpp/rclcpp.hpp"
 
+void load_waypoints(
+  std::shared_ptr<rclcpp::Node> node,
+  std::vector<std::vector<double>> & waypoints_array)
+{
+  // Se lee los waypoints del fichero de parametros y se guarda como un array que
+  // contiene un array de double [x.,y.]
+  std::vector<std::string> waypoints;
 
+  node->declare_parameter("waypoints");
+  rclcpp::Parameter param("waypoints", std::vector<std::string>({}));
+  node->get_parameter("waypoints", param);
+  waypoints = param.as_string_array();
+  for (int i = 1; i <= waypoints.size(); i++) {
+    std::string wp = "wp" + std::to_string(i);
+    node->declare_parameter(wp);
+    rclcpp::Parameter param(wp, std::vector<double>({}));
+    node->get_parameter(wp, param);
+    waypoints_array.push_back(param.as_double_array());
+  }
+}
 
 int main(int argc, char * argv[])
 {
   rclcpp::init(argc, argv);
 
   auto node = rclcpp::Node::make_shared("patrolling_node");
-
-  node->declare_parameter("waypoints");
-  rclcpp::Parameter param("waypoints", std::vector<std::string>({}));
-  node->get_parameter("waypoints", param);
-  std::vector<std::string> waypoints = param.as_string_array();
-  //std::vector<std::vector<double>> wps;
-  for (int i = 1; i <= waypoints.size(); i++) {
-    std::string wp ="wp" + std::to_string(i);
-    node->declare_parameter(wp);
-    rclcpp::Parameter param(wp, std::vector<double>({}));
-    node->get_parameter(wp, param);
-    //wps.push_back(param.as_integer_array());
-    std::cout << param.as_double_array()[0] << param.as_double_array()[1] << std::endl;
-  
-  }
-  
+  std::vector<std::vector<double>> waypoints_vector;
   BT::BehaviorTreeFactory factory;
   BT::SharedLibrary loader;
 
+  load_waypoints(node, waypoints_vector);
   factory.registerFromPlugin(loader.getOSName("br2_move_bt_node"));
   factory.registerFromPlugin(loader.getOSName("br2_patrol_bt_node"));
   factory.registerFromPlugin(loader.getOSName("br2_getwaypoint_bt_node"));
@@ -60,12 +63,9 @@ int main(int argc, char * argv[])
 
   auto blackboard = BT::Blackboard::create();
   blackboard->set("node", node);
-  int n = 3; // Parece que no se puede enviar un entero por un puerto
-  //epro un puntero si
-  blackboard->set("wp_id", n);
   BT::Tree tree = factory.createTreeFromFile(xml_file, blackboard);
 
-  auto publisher_zmq = std::make_shared<BT::PublisherZMQ>(tree, 10, 2668, 2669);
+  auto publisher_zmq = std::make_shared<BT::PublisherZMQ>(tree, 10, 2666, 2667);
 
   rclcpp::Rate rate(10);
 
