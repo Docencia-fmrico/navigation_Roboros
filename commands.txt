@@ -1,4 +1,8 @@
+//Comandos para ejecutar practica con tiago en gazebo:
+
 ros2 launch br2_tiago sim.launch.py // Simulador con el tiago
 ros2 launch br2_navigation tiago_navigation.launch.py // Navegacion configurada para tiago	
 rviz2 // rviz para ver mapa o jugar con goal
- ros2 launch bt_behavior patrolling.launch.py // nodo patrulla
+ros2 launch bt_behavior patrolling.launch.py // nodo patrulla
+
+//Comandos para mapear:
