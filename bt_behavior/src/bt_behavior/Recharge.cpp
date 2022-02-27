@@ -1,4 +1,4 @@
-// Copyright 2019 Intelligent Robotics Lab
+// Copyright 2021 Intelligent Robotics Lab
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,40 +14,55 @@
 
 #include <string>
 #include <iostream>
-#include <vector>
-#include <memory>
 
-#include "bt_behavior/BatteryChecker.hpp"
+#include "bt_behavior/Patrol.hpp"
 
 #include "behaviortree_cpp_v3/behavior_tree.h"
-BatteryChecker::BatteryChecker(const std::string & name){
+
+#include "geometry_msgs/msg/twist.hpp"
+
+#include "rclcpp/rclcpp.hpp"
+
+#include "bt_behavior/Recharge.hpp"
+
+namespace bt_behavior
+{
+
+Recharge::Recharge(
+  const std::string & xml_tag_name,
+  const BT::NodeConfiguration & conf)
+: BT::ActionNodeBase(xml_tag_name, conf)
+{
   // no se cual sub es
   batterysub_ = create_subscription<sensor_msgs::Batterystate>(
-    "?", 10, std::bind(&BatteryChecker::callback, this, _1));
+    "?", 10, std::bind(&Recharge::callback, this, _1));
+}
+
+void
+Patrol::halt()
+{
+  std::cout << "Recharge halt" << std::endl;
 }
 
 BT::NodeStatus
-BatteryChecker::tick()
+Recharge::tick()
 {
   if (Batterycharge) {
     return BT::NodeStatus::SUCCESS;
-  } else {
-    return BT::NodeStatus::FAILURE;
   }
 }
 
 void callback(const sensor_msgs::Batterystate::SharedPtr msg){
-  // BATTERY_LOW= 4 or BATTERY_CRITICAL= 5
-  if (msg == 4 || msg == 5) {
+  // uint8 POWER_SUPPLY_STATUS_FULL = 4
+  if (msg->power_supply_status == 4) {
     Batterycharge = 1;
   } else {
     Batterycharge = 0;
   }
 }
 
-
 #include "behaviortree_cpp_v3/bt_factory.h"
 BT_REGISTER_NODES(factory)
 {
-  factory.registerNodeType<BatteryChecker>("BatteryChecker");
+  factory.registerNodeType<bt_behavior::Recharge>("Recharge");
 }
