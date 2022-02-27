@@ -20,7 +20,7 @@
 #include "behaviortree_cpp_v3/behavior_tree.h"
 #include "behaviortree_cpp_v3/bt_factory.h"
 
-#include "sensor_msgs/msg/BatteryState.hpp"
+#include "sensor_msgs/msg/battery_state.hpp"
 #include "rclcpp/rclcpp.hpp"
 
 namespace bt_behavior
@@ -35,11 +35,11 @@ public:
 
   void halt();
   BT::NodeStatus tick();
-  void callback(const sensor_msgs::Batterystate::SharedPtr msg);
+  void callback(const sensor_msgs::msg::BatteryState::SharedPtr msg);
 
   bool Batterycharge;
 private:
-  rclcpp::Subscription<sensor_msgs::Batterystate>::SharedPtr batterysub_;
+  rclcpp::Subscription<sensor_msgs::msg::BatteryState>::SharedPtr batterysub_;
 
 };
 

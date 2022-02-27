@@ -34,7 +34,7 @@ Recharge::Recharge(
 : BT::ActionNodeBase(xml_tag_name, conf)
 {
   // no se cual sub es
-  batterysub_ = create_subscription<sensor_msgs::Batterystate>(
+  batterysub_ = rclcpp::create_subscription<sensor_msgs::Batterystate>(
     "?", 10, std::bind(&Recharge::callback, this, _1));
 }
 

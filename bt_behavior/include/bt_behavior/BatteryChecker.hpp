@@ -21,7 +21,7 @@
 #include "geometry_msgs/msg/pose_stamped.hpp"
 #include "nav2_msgs/action/navigate_to_pose.hpp"
 
-#include "sensor_msgs/msg/BatteryState.hpp"
+#include "sensor_msgs/msg/battery_state.hpp"
 
 #include "bt_behavior/ctrl_support/BTActionNode.hpp"
 #include "behaviortree_cpp_v3/behavior_tree.h"
