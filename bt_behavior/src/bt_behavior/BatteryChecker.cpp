@@ -20,10 +20,27 @@
 #include "bt_behavior/BatteryChecker.hpp"
 
 #include "behaviortree_cpp_v3/behavior_tree.h"
-
+BatteryChecker::BatteryChecker(const std::string & name){
+  // no se cual sub es
+  batterysub_ = create_subscription<kobuki_msgs::PowerSystemEvent>(
+    "?", 10, std::bind(&BatteryChecker::callback, this, _1));
+}
 
 BT::NodeStatus
 BatteryChecker::tick()
 {
-  return BT::NodeStatus::SUCCESS;
+  if (Batterycharge) {
+    return BT::NodeStatus::SUCCESS;
+  } else {
+    return BT::NodeStatus::FAILURE;
+  }
+}
+
+void callback(const kobuki_msgs::PowerSystemEvent::SharedPtr msg){
+  // BATTERY_LOW= 4 or BATTERY_CRITICAL= 5
+  if (msg == 4 || msg == 5) {
+    Batterycharge = 1;
+  } else {
+    Batterycharge = 0;
+  }
 }
