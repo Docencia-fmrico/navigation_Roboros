@@ -26,6 +26,7 @@
 #include "rclcpp/rclcpp.hpp"
 
 
+
 int main(int argc, char * argv[])
 {
   rclcpp::init(argc, argv);
@@ -36,15 +37,15 @@ int main(int argc, char * argv[])
   rclcpp::Parameter param("waypoints", std::vector<std::string>({}));
   node->get_parameter("waypoints", param);
   std::vector<std::string> waypoints = param.as_string_array();
-  std::cout << waypoints.size() << std::endl;
-  RCLCPP_INFO(node->get_logger(), "%d", waypoints.size());
-  std::vector<std::vector<long int>> wps;
-  for (int i = 0; i < 2; i++) {
+  //std::vector<std::vector<double>> wps;
+  for (int i = 1; i <= waypoints.size(); i++) {
     std::string wp ="wp" + std::to_string(i);
-    rclcpp::Parameter param(wp, std::vector<long int>({}));
+    node->declare_parameter(wp);
+    rclcpp::Parameter param(wp, std::vector<double>({}));
     node->get_parameter(wp, param);
     //wps.push_back(param.as_integer_array());
-    std::cout << param.as_integer_array()[0];
+    std::cout << param.as_double_array()[0] << param.as_double_array()[1] << std::endl;
+  
   }
   
   BT::BehaviorTreeFactory factory;
@@ -52,15 +53,19 @@ int main(int argc, char * argv[])
 
   factory.registerFromPlugin(loader.getOSName("br2_move_bt_node"));
   factory.registerFromPlugin(loader.getOSName("br2_patrol_bt_node"));
+  factory.registerFromPlugin(loader.getOSName("br2_getwaypoint_bt_node"));
 
   std::string pkgpath = ament_index_cpp::get_package_share_directory("bt_behavior");
   std::string xml_file = pkgpath + "/behavior_tree_xml/simple.xml";
 
   auto blackboard = BT::Blackboard::create();
   blackboard->set("node", node);
+  int n = 3; // Parece que no se puede enviar un entero por un puerto
+  //epro un puntero si
+  blackboard->set("wp_id", n);
   BT::Tree tree = factory.createTreeFromFile(xml_file, blackboard);
 
-  auto publisher_zmq = std::make_shared<BT::PublisherZMQ>(tree, 10, 2666, 2667);
+  auto publisher_zmq = std::make_shared<BT::PublisherZMQ>(tree, 10, 2668, 2669);
 
   rclcpp::Rate rate(10);
 

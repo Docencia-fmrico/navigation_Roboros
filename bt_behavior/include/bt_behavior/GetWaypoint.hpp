@@ -12,41 +12,42 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#ifndef BT_BEHAVIOR__MOVE_HPP_
-#define BT_BEHAVIOR__MOVE_HPP_
+#ifndef BT_BEHAVIOR__PATROL_HPP_
+#define BT_BEHAVIOR__PATROL_HPP_
 
 #include <string>
-#include "geometry_msgs/msg/twist.hpp"
 
-#include "geometry_msgs/msg/pose_stamped.hpp"
-#include "nav2_msgs/action/navigate_to_pose.hpp"
-
-#include "bt_behavior/ctrl_support/BTActionNode.hpp"
 #include "behaviortree_cpp_v3/behavior_tree.h"
 #include "behaviortree_cpp_v3/bt_factory.h"
+
+#include "geometry_msgs/msg/twist.hpp"
+
+#include "rclcpp/rclcpp.hpp"
 
 namespace bt_behavior
 {
 
-class Move : public bt_behavior::BtActionNode<nav2_msgs::action::NavigateToPose>
+class GetWaypoint : public BT::ActionNodeBase
 {
 public:
-  explicit Move(
+  explicit GetWaypoint(
     const std::string & xml_tag_name,
-    const std::string & action_name,
     const BT::NodeConfiguration & conf);
 
-  void on_tick() override;
-  BT::NodeStatus on_success() override;
+  void halt();
+  BT::NodeStatus tick();
 
   static BT::PortsList providedPorts()
   {
-    return {
-      BT::InputPort<geometry_msgs::msg::PoseStamped>("goal")
-    };
+    return BT::PortsList({});
   }
+
+private:
+  rclcpp::Node::SharedPtr node_;
+  rclcpp::Time start_time_;
+  rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr vel_pub_;
 };
 
 }  // namespace bt_behavior
 
-#endif  // BT_BEHAVIOR__MOVE_HPP_
+#endif  // BT_BEHAVIOR__PATROL_HPP_

@@ -43,9 +43,12 @@ include_directories(include ${ZMQ_INCLUDE_DIRS})
 
 add_library(br2_patrol_bt_node SHARED src/bt_behavior/Patrol.cpp)
 add_library(br2_move_bt_node SHARED src/bt_behavior/Move.cpp)
+add_library(br2_getwaypoint_bt_node SHARED src/bt_behavior/GetWaypoint.cpp)
+
 list(APPEND plugin_libs
   br2_patrol_bt_node
   br2_move_bt_node
+  br2_getwaypoint_bt_node
 )
 
 foreach(bt_plugin ${plugin_libs})

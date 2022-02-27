@@ -40,7 +40,16 @@ void
 Move::on_tick()
 {
   geometry_msgs::msg::PoseStamped goal;
-  getInput("goal", goal);
+  goal.pose.position.x = 0.77;
+  goal.pose.position.y = -0.65;
+  goal.pose.position.z = 0;
+  goal.pose.orientation.x = 0;
+  goal.pose.orientation.y = 0;
+  goal.pose.orientation.z = 0;
+  goal.pose.orientation.w = 1;
+
+  std::cout << "tick" << std::endl;
+  //getInput("goal", goal);
 
   goal_.pose = goal;
 }

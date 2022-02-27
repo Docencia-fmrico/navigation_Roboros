@@ -5,7 +5,7 @@
         <KeepRunningUntilFailure>
             <ReactiveSequence>
                 <Sequence>
-                    <Action ID="Move" goal="{wp}"/>
+                    <Action ID="Patrol"/>
                 </Sequence>
             </ReactiveSequence>
         </KeepRunningUntilFailure>
