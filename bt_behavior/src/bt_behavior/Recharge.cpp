@@ -34,12 +34,13 @@ Recharge::Recharge(
 : BT::ActionNodeBase(xml_tag_name, conf)
 {
   // no se cual sub es
-  batterysub_ = rclcpp::create_subscription<sensor_msgs::Batterystate>(
+  batterysub_ = rclcpp::create_subscription<sensor_msgs::msg::BatteryState>(
     "?", 10, std::bind(&Recharge::callback, this, _1));
+  Batterycharge=false;
 }
 
 void
-Patrol::halt()
+Recharge::halt()
 {
   std::cout << "Recharge halt" << std::endl;
 }
@@ -52,14 +53,16 @@ Recharge::tick()
   }
 }
 
-void callback(const sensor_msgs::Batterystate::SharedPtr msg){
+void callback(const sensor_msgs::msg::BatteryState::SharedPtr msg){
   // uint8 POWER_SUPPLY_STATUS_FULL = 4
   if (msg->power_supply_status == 4) {
-    Batterycharge = 1;
+    Batterycharge = true;
   } else {
-    Batterycharge = 0;
+    Batterycharge = false;
   }
 }
+
+}  // namespace bt_behavior
 
 #include "behaviortree_cpp_v3/bt_factory.h"
 BT_REGISTER_NODES(factory)

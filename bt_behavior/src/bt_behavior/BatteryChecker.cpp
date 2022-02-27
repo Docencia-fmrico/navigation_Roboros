@@ -20,10 +20,25 @@
 #include "bt_behavior/BatteryChecker.hpp"
 
 #include "behaviortree_cpp_v3/behavior_tree.h"
-BatteryChecker::BatteryChecker(const std::string & name){
+
+namespace bt_behavior
+{
+
+BatteryChecker::BatteryChecker(
+  const std::string & xml_tag_name,
+  const BT::NodeConfiguration & conf)
+: BT::ActionNodeBase(xml_tag_name, conf)
+{
   // no se cual sub es
-  batterysub_ = create_subscription<sensor_msgs::Batterystate>(
+  batterysub_ = rclcpp::create_subscription<sensor_msgs::msg::BatteryState>(
     "?", 10, std::bind(&BatteryChecker::callback, this, _1));
+  Batterycharge=false;
+}
+
+void
+BatteryChecker::halt()
+{
+  std::cout << "Recharge needed" << std::endl;
 }
 
 BT::NodeStatus
@@ -36,15 +51,16 @@ BatteryChecker::tick()
   }
 }
 
-void callback(const sensor_msgs::Batterystate::SharedPtr msg){
+void callback(const sensor_msgs::msg::BatteryState::SharedPtr msg){
   // BATTERY_LOW= 4 or BATTERY_CRITICAL= 5
-  if (msg == 4 || msg == 5) {
-    Batterycharge = 1;
+  if (msg->power_supply_status == 4 || msg->power_supply_status == 5) {
+    Batterycharge = true;
   } else {
-    Batterycharge = 0;
+    Batterycharge = false;
   }
 }
 
+}  // namespace bt_behavior
 
 #include "behaviortree_cpp_v3/bt_factory.h"
 BT_REGISTER_NODES(factory)
