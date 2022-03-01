@@ -57,9 +57,10 @@ int main(int argc, char * argv[])
   factory.registerFromPlugin(loader.getOSName("br2_move_bt_node"));
   factory.registerFromPlugin(loader.getOSName("br2_patrol_bt_node"));
   factory.registerFromPlugin(loader.getOSName("br2_getwaypoint_bt_node"));
+  factory.registerFromPlugin(loader.getOSName("br2_obstacledetection_bt_node"));
 
   std::string pkgpath = ament_index_cpp::get_package_share_directory("bt_behavior");
-  std::string xml_file = pkgpath + "/behavior_tree_xml/simple2.xml";
+  std::string xml_file = pkgpath + "/behavior_tree_xml/simple.xml";
 
   auto blackboard = BT::Blackboard::create();
   blackboard->set("node", node);

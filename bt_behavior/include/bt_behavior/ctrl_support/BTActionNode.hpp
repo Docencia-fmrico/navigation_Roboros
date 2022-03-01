@@ -194,7 +194,8 @@ public:
       }
     }
 
-    setStatus(BT::NodeStatus::IDLE);
+    //setStatus(BT::NodeStatus::IDLE); original
+    setStatus(BT::NodeStatus::SUCCESS);
   }
 
 protected:

@@ -27,6 +27,8 @@
 namespace bt_behavior
 {
 
+using namespace std::chrono_literals;
+
 Move::Move(
   const std::string & xml_tag_name,
   const std::string & action_name,
@@ -39,12 +41,24 @@ Move::Move(
 void
 Move::on_tick()
 {
+  start_time_ = node_->now();
   geometry_msgs::msg::PoseStamped goal;
   std::cout << "Moving to waypoint!!!" << std::endl;
 
   getInput("goal", goal);
 
   goal_.pose = goal;
+}
+
+void Move::on_wait_for_result(){
+  auto elapsed = node_->now() - start_time_;
+
+  if (elapsed < 2s) {
+    std::cout << "hi" << std::endl;
+  } else {
+    std::cout << "FINISH" << std::endl;
+      halt();
+  }
 }
 
 BT::NodeStatus
