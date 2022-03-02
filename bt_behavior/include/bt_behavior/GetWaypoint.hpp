@@ -39,13 +39,17 @@ public:
 
   static BT::PortsList providedPorts()
   {
-    return BT::PortsList({BT::OutputPort<geometry_msgs::msg::PoseStamped>("waypoint")});
+    return BT::PortsList({
+      BT::OutputPort<geometry_msgs::msg::PoseStamped>("waypoint"),
+      BT::InputPort<std::vector<std::vector<double>>>("waypoints_vector")
+      });
   }
 
 private:
   rclcpp::Node::SharedPtr node_;
   rclcpp::Time start_time_;
   rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr vel_pub_;
+  int counter;
 };
 
 }  // namespace bt_behavior
