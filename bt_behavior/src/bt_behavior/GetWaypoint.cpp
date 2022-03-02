@@ -35,6 +35,7 @@ GetWaypoint::GetWaypoint(
 : BT::ActionNodeBase(xml_tag_name, conf)
 {
   config().blackboard->get("node", node_);
+  counter = 0;
 }
 
 void
@@ -48,8 +49,16 @@ GetWaypoint::tick()
 {
   // Deberia hacer un getOutput id waypoint, aqui se rellena un punto a mano para probar
   geometry_msgs::msg::PoseStamped wp;
-  wp.pose.position.x = 0.97;
-  wp.pose.position.y = -0.65;
+  std::vector<std::vector<double>> waypoints_vector;
+  //getInput("waypoints_vector",waypoints_vector);
+  config().blackboard->get("waypoints_vector", waypoints_vector);
+  std::cout << counter++ << std::endl;
+
+  if (waypoints_vector.size() <= counter)
+    counter = 0;
+  
+  wp.pose.position.x = waypoints_vector[counter][0];
+  wp.pose.position.y = waypoints_vector[counter][1];
   wp.pose.position.z = 0;
   wp.pose.orientation.x = 0;
   wp.pose.orientation.y = 0;

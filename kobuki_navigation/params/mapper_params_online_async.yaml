@@ -13,7 +13,11 @@ slam_toolbox:
     odom_frame: odom
     map_frame: map
     base_frame: base_link
+<<<<<<< HEAD
     scan_topic: /scan_filtered
+=======
+    scan_topic: /scan_raw
+>>>>>>> ed105cc49fe911f7ed581837a0c4ecb8ec4276be
     mode: mapping #localization
 
     # if you'd like to immediately start continuing a map at a given pose
