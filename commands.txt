@@ -12,3 +12,6 @@ ros2 launch slam_toolbox online_async_launch.py params_file:=/home/carlos/colcon
 ros2 launch kobuki_navigation kobuki_navigation.launch.py
 ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args --remap /cmd_vel:=/commands/velocity
 
+ros2 run nav2_map_server map_saver_cli --ros-args -p use_sim_time:=true
+ros2 launch nav2_map_server map_saver_server.launch.py
+

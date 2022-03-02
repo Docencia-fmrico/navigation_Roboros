@@ -1,0 +1,1 @@
+/home/carlos/colcon.ws/src/navigation_Roboros/build/bt_behavior/ament_cmake_environment_hooks/local_setup.bash

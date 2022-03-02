@@ -1,0 +1,493 @@
+[0.000000] (-) TimerEvent: {}
+[0.000601] (-) JobUnselected: {'identifier': 'kobuki_navigation'}
+[0.001065] (bt_behavior) JobQueued: {'identifier': 'bt_behavior', 'dependencies': OrderedDict()}
+[0.001356] (bt_behavior) JobStarted: {'identifier': 'bt_behavior'}
+[0.038817] (bt_behavior) JobProgress: {'identifier': 'bt_behavior', 'progress': 'cmake'}
+[0.039544] (bt_behavior) Command: {'cmd': ['/usr/bin/cmake', '/home/carlos/colcon.ws/src/navigation_Roboros/bt_behavior', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/carlos/colcon.ws/src/navigation_Roboros/install/bt_behavior'], 'cwd': '/home/carlos/colcon.ws/src/navigation_Roboros/build/bt_behavior', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'carlos'), ('LC_TIME', 'es_ES.UTF-8'), ('SSH_AGENT_PID', '2014'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/carlos/colcon.ws/install/velocity_controllers/lib:/home/carlos/colcon.ws/install/test_ci/lib:/home/carlos/colcon.ws/install/rqt_cascade_hfsm/lib:/home/carlos/colcon.ws/install/rplidar_ros/lib:/home/carlos/colcon.ws/install/ros2talk_msgs/lib:/home/carlos/colcon.ws/install/position_controllers/lib:/home/carlos/colcon.ws/install/laser_filters/lib:/home/carlos/colcon.ws/install/kobuki_safety_controller/lib:/home/carlos/colcon.ws/install/kobuki_random_walker/lib:/home/carlos/colcon.ws/install/kobuki_node/lib:/home/carlos/colcon.ws/install/kobuki_keyop/lib:/home/carlos/colcon.ws/install/kobuki_bumper2pc/lib:/home/carlos/colcon.ws/install/kobuki_auto_docking/lib:/home/carlos/colcon.ws/install/kobuki_ros_interfaces/lib:/home/carlos/colcon.ws/install/joint_trajectory_controller/lib:/home/carlos/colcon.ws/install/joint_state_controller/lib:/home/carlos/colcon.ws/install/joint_state_broadcaster/lib:/home/carlos/colcon.ws/install/imu_sensor_broadcaster/lib:/home/carlos/colcon.ws/install/gripper_controllers/lib:/home/carlos/colcon.ws/install/gazebo_ros2_control/lib:/home/carlos/colcon.ws/install/effort_controllers/lib:/home/carlos/colcon.ws/install/forward_command_controller/lib:/home/carlos/colcon.ws/install/force_torque_sensor_broadcaster/lib:/home/carlos/colcon.ws/install/diff_drive_controller/lib:/home/carlos/colcon.ws/install/controller_manager/lib:/home/carlos/colcon.ws/install/controller_interface/lib:/home/carlos/colcon.ws/install/hardware_interface/lib:/home/carlos/colcon.ws/install/groot/lib:/home/carlos/colcon.ws/install/follow_wall/lib:/home/carlos/colcon.ws/install/follow-wall/lib:/home/carlos/colcon.ws/install/example_test/lib:/home/carlos/colcon.ws/install/diagnostic_aggregator/lib:/home/carlos/colcon.ws/install/controller_manager_msgs/lib:/home/carlos/colcon.ws/install/blackboard/lib:/home/carlos/colcon.ws/install/blackboard_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/carlos'), ('OLDPWD', '/home/carlos/colcon.ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_ES.UTF-8'), ('MANAGERPID', '1777'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/carlos/colcon.ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'carlos'), ('JOURNAL_STREAM', '8:51775'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'carlos'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/carlos-rob:@/tmp/.ICE-unix/2048,unix/carlos-rob:/tmp/.ICE-unix/2048'), ('INVOCATION_ID', '752aedcadd1543d0b44e11f887b3bf11'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fbe6396c_d19d_4fae_89d1_3eded9a2cb8f'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.121'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/carlos/colcon.ws/install/worlds:/home/carlos/colcon.ws/install/gazebo_ros2_control_demos:/home/carlos/colcon.ws/install/ros2_controllers:/home/carlos/colcon.ws/install/velocity_controllers:/home/carlos/colcon.ws/install/urdf_test:/home/carlos/colcon.ws/install/tiago_simulation:/home/carlos/colcon.ws/install/tiago_robot:/home/carlos/colcon.ws/install/tiago_2dnav_gazebo:/home/carlos/colcon.ws/install/tiago_gazebo:/home/carlos/colcon.ws/install/tiago_bringup:/home/carlos/colcon.ws/install/pmb2_robot:/home/carlos/colcon.ws/install/pmb2_bringup:/home/carlos/colcon.ws/install/twist_mux:/home/carlos/colcon.ws/install/transmission_interface:/home/carlos/colcon.ws/install/tiago_description:/home/carlos/colcon.ws/install/tiago_description_calibration:/home/carlos/colcon.ws/install/tiago_controller_configuration:/home/carlos/colcon.ws/install/test_hfsm:/home/carlos/colcon.ws/install/test_ci:/home/carlos/colcon.ws/install/services_ros2:/home/carlos/colcon.ws/install/self_test:/home/carlos/colcon.ws/install/rqt_cascade_hfsm:/home/carlos/colcon.ws/install/rplidar_ros:/home/carlos/colcon.ws/install/actions_ros2:/home/carlos/colcon.ws/install/ros2talk_msgs:/home/carlos/colcon.ws/install/ros2_control:/home/carlos/colcon.ws/install/ros2controlcli:/home/carlos/colcon.ws/install/ros2_control_test_assets:/home/carlos/colcon.ws/install/pal_gripper:/home/carlos/colcon.ws/install/pal_gripper_controller_configuration:/home/carlos/colcon.ws/install/position_controllers:/home/carlos/colcon.ws/install/pmb2_navigation:/home/carlos/colcon.ws/install/pmb2_2dnav:/home/carlos/colcon.ws/install/pmb2_maps:/home/carlos/colcon.ws/install/pmb2_description:/home/carlos/colcon.ws/install/pmb2_controller_configuration:/home/carlos/colcon.ws/install/parameters_ros2:/home/carlos/colcon.ws/install/pal_gripper_description:/home/carlos/colcon.ws/install/pal_gazebo_worlds:/home/carlos/colcon.ws/install/lifecycle_nodes_ros2:/home/carlos/colcon.ws/install/launchers_ros2:/home/carlos/colcon.ws/install/launch_pal:/home/carlos/colcon.ws/install/laser_filters:/home/carlos/colcon.ws/install/kobuki_ros:/home/carlos/colcon.ws/install/kobuki_safety_controller:/home/carlos/colcon.ws/install/kobuki_random_walker:/home/carlos/colcon.ws/install/kobuki_node:/home/carlos/colcon.ws/install/kobuki_keyop:/home/carlos/colcon.ws/install/kobuki_bumper2pc:/home/carlos/colcon.ws/install/kobuki_auto_docking:/home/carlos/colcon.ws/install/kobuki_ros_interfaces:/home/carlos/colcon.ws/install/kobuki_description:/home/carlos/colcon.ws/install/joint_trajectory_controller:/home/carlos/colcon.ws/install/joint_state_controller:/home/carlos/colcon.ws/install/joint_state_broadcaster:/home/carlos/colcon.ws/install/ir_tiago:/home/carlos/colcon.ws/install/ir_kobuki:/home/carlos/colcon.ws/install/intro_ros2:/home/carlos/colcon.ws/install/intro_py_ros2:/home/carlos/colcon.ws/install/imu_sensor_broadcaster:/home/carlos/colcon.ws/install/hey5_description:/home/carlos/colcon.ws/install/gripper_controllers:/home/carlos/colcon.ws/install/gazebo_ros2_control:/home/carlos/colcon.ws/install/effort_controllers:/home/carlos/colcon.ws/install/forward_command_controller:/home/carlos/colcon.ws/install/force_torque_sensor_broadcaster:/home/carlos/colcon.ws/install/diff_drive_controller:/home/carlos/colcon.ws/install/controller_manager:/home/carlos/colcon.ws/install/controller_interface:/home/carlos/colcon.ws/install/hardware_interface:/home/carlos/colcon.ws/install/groot:/home/carlos/colcon.ws/install/follow_wall:/home/carlos/colcon.ws/install/follow-wall:/home/carlos/colcon.ws/install/example_test:/home/carlos/colcon.ws/install/ejemplo:/home/carlos/colcon.ws/install/diagnostic_updater:/home/carlos/colcon.ws/install/diagnostic_aggregator:/home/carlos/colcon.ws/install/controller_manager_msgs:/home/carlos/colcon.ws/install/br2_tiago:/home/carlos/colcon.ws/install/br2_navigation:/home/carlos/colcon.ws/install/blackboard:/home/carlos/colcon.ws/install/blackboard_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/carlos/colcon.ws/src/navigation_Roboros/build/bt_behavior'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/carlos/colcon.ws/install/urdf_test/lib/python3.8/site-packages:/home/carlos/colcon.ws/install/tiago_description/lib/python3.8/site-packages:/home/carlos/colcon.ws/install/ros2talk_msgs/lib/python3.8/site-packages:/home/carlos/colcon.ws/install/ros2controlcli/lib/python3.8/site-packages:/home/carlos/colcon.ws/install/pmb2_description/lib/python3.8/site-packages:/home/carlos/colcon.ws/install/launch_pal/lib/python3.8/site-packages:/home/carlos/colcon.ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:/home/carlos/colcon.ws/install/intro_py_ros2/lib/python3.8/site-packages:/home/carlos/colcon.ws/install/controller_manager/lib/python3.8/site-packages:/home/carlos/colcon.ws/install/diagnostic_updater/lib/python3.8/site-packages:/home/carlos/colcon.ws/install/diagnostic_aggregator/lib/python3.8/site-packages:/home/carlos/colcon.ws/install/controller_manager_msgs/lib/python3.8/site-packages:/home/carlos/colcon.ws/install/blackboard_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'es_ES.UTF-8'), ('LC_PAPER', 'es_ES.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/carlos/colcon.ws/install/worlds:/home/carlos/colcon.ws/install/gazebo_ros2_control_demos:/home/carlos/colcon.ws/install/ros2_controllers:/home/carlos/colcon.ws/install/velocity_controllers:/home/carlos/colcon.ws/install/urdf_test:/home/carlos/colcon.ws/install/tiago_simulation:/home/carlos/colcon.ws/install/tiago_robot:/home/carlos/colcon.ws/install/tiago_2dnav_gazebo:/home/carlos/colcon.ws/install/tiago_gazebo:/home/carlos/colcon.ws/install/tiago_bringup:/home/carlos/colcon.ws/install/pmb2_robot:/home/carlos/colcon.ws/install/pmb2_bringup:/home/carlos/colcon.ws/install/twist_mux:/home/carlos/colcon.ws/install/transmission_interface:/home/carlos/colcon.ws/install/tiago_description:/home/carlos/colcon.ws/install/tiago_description_calibration:/home/carlos/colcon.ws/install/tiago_controller_configuration:/home/carlos/colcon.ws/install/test_hfsm:/home/carlos/colcon.ws/install/test_ci:/home/carlos/colcon.ws/install/services_ros2:/home/carlos/colcon.ws/install/self_test:/home/carlos/colcon.ws/install/rqt_cascade_hfsm:/home/carlos/colcon.ws/install/rplidar_ros:/home/carlos/colcon.ws/install/actions_ros2:/home/carlos/colcon.ws/install/ros2talk_msgs:/home/carlos/colcon.ws/install/ros2_control:/home/carlos/colcon.ws/install/ros2_control_test_assets:/home/carlos/colcon.ws/install/pal_gripper:/home/carlos/colcon.ws/install/pal_gripper_controller_configuration:/home/carlos/colcon.ws/install/position_controllers:/home/carlos/colcon.ws/install/pmb2_navigation:/home/carlos/colcon.ws/install/pmb2_2dnav:/home/carlos/colcon.ws/install/pmb2_maps:/home/carlos/colcon.ws/install/pmb2_description:/home/carlos/colcon.ws/install/pmb2_controller_configuration:/home/carlos/colcon.ws/install/parameters_ros2:/home/carlos/colcon.ws/install/pal_gripper_description:/home/carlos/colcon.ws/install/pal_gazebo_worlds:/home/carlos/colcon.ws/install/lifecycle_nodes_ros2:/home/carlos/colcon.ws/install/launchers_ros2:/home/carlos/colcon.ws/install/laser_filters:/home/carlos/colcon.ws/install/kobuki_ros:/home/carlos/colcon.ws/install/kobuki_safety_controller:/home/carlos/colcon.ws/install/kobuki_random_walker:/home/carlos/colcon.ws/install/kobuki_node:/home/carlos/colcon.ws/install/kobuki_keyop:/home/carlos/colcon.ws/install/kobuki_bumper2pc:/home/carlos/colcon.ws/install/kobuki_auto_docking:/home/carlos/colcon.ws/install/kobuki_ros_interfaces:/home/carlos/colcon.ws/install/kobuki_description:/home/carlos/colcon.ws/install/joint_trajectory_controller:/home/carlos/colcon.ws/install/joint_state_controller:/home/carlos/colcon.ws/install/joint_state_broadcaster:/home/carlos/colcon.ws/install/ir_tiago:/home/carlos/colcon.ws/install/ir_kobuki:/home/carlos/colcon.ws/install/intro_ros2:/home/carlos/colcon.ws/install/imu_sensor_broadcaster:/home/carlos/colcon.ws/install/hey5_description:/home/carlos/colcon.ws/install/gripper_controllers:/home/carlos/colcon.ws/install/gazebo_ros2_control:/home/carlos/colcon.ws/install/effort_controllers:/home/carlos/colcon.ws/install/forward_command_controller:/home/carlos/colcon.ws/install/force_torque_sensor_broadcaster:/home/carlos/colcon.ws/install/diff_drive_controller:/home/carlos/colcon.ws/install/controller_manager:/home/carlos/colcon.ws/install/controller_interface:/home/carlos/colcon.ws/install/hardware_interface:/home/carlos/colcon.ws/install/groot:/home/carlos/colcon.ws/install/follow_wall:/home/carlos/colcon.ws/install/follow-wall:/home/carlos/colcon.ws/install/example_test:/home/carlos/colcon.ws/install/ejemplo:/home/carlos/colcon.ws/install/diagnostic_updater:/home/carlos/colcon.ws/install/diagnostic_aggregator:/home/carlos/colcon.ws/install/controller_manager_msgs:/home/carlos/colcon.ws/install/br2_tiago:/home/carlos/colcon.ws/install/br2_navigation:/home/carlos/colcon.ws/install/blackboard:/home/carlos/colcon.ws/install/blackboard_msgs:/home/carlos/colcon.ws/install/ros2controlcli:/home/carlos/colcon.ws/install/launch_pal:/home/carlos/colcon.ws/install/intro_py_ros2:/opt/ros/foxy')]), 'shell': False}
+[0.099420] (-) TimerEvent: {}
+[0.200309] (-) TimerEvent: {}
+[0.266442] (bt_behavior) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.3.0\n'}
+[0.300488] (-) TimerEvent: {}
+[0.401107] (-) TimerEvent: {}
+[0.448159] (bt_behavior) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.3.0\n'}
+[0.468188] (bt_behavior) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.501290] (-) TimerEvent: {}
+[0.601863] (-) TimerEvent: {}
+[0.637795] (bt_behavior) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.640617] (bt_behavior) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.702025] (-) TimerEvent: {}
+[0.802663] (-) TimerEvent: {}
+[0.809461] (bt_behavior) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.834742] (bt_behavior) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.835393] (bt_behavior) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.841406] (bt_behavior) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.902834] (-) TimerEvent: {}
+[1.003530] (-) TimerEvent: {}
+[1.018328] (bt_behavior) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[1.021632] (bt_behavior) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.103729] (-) TimerEvent: {}
+[1.204429] (-) TimerEvent: {}
+[1.216329] (bt_behavior) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.238505] (bt_behavior) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.239180] (bt_behavior) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.264603] (bt_behavior) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[1.304592] (-) TimerEvent: {}
+[1.339519] (bt_behavior) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[1.340134] (bt_behavior) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.404730] (-) TimerEvent: {}
+[1.505247] (-) TimerEvent: {}
+[1.605847] (-) TimerEvent: {}
+[1.683858] (bt_behavior) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.706010] (-) TimerEvent: {}
+[1.806595] (-) TimerEvent: {}
+[1.849152] (bt_behavior) StdoutLine: {'line': b'-- Found rclcpp: 2.4.0 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[1.906801] (-) TimerEvent: {}
+[2.007478] (-) TimerEvent: {}
+[2.078151] (bt_behavior) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.107683] (-) TimerEvent: {}
+[2.117868] (bt_behavior) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[2.208110] (-) TimerEvent: {}
+[2.308694] (-) TimerEvent: {}
+[2.409232] (-) TimerEvent: {}
+[2.429845] (bt_behavior) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[2.509439] (-) TimerEvent: {}
+[2.510679] (bt_behavior) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[2.609670] (-) TimerEvent: {}
+[2.710306] (-) TimerEvent: {}
+[2.740610] (bt_behavior) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.810551] (-) TimerEvent: {}
+[2.911198] (-) TimerEvent: {}
+[2.928938] (bt_behavior) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[2.946910] (bt_behavior) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.950989] (bt_behavior) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[3.011596] (-) TimerEvent: {}
+[3.112194] (-) TimerEvent: {}
+[3.130921] (bt_behavior) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[3.131702] (bt_behavior) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[3.212358] (-) TimerEvent: {}
+[3.307562] (bt_behavior) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[3.308382] (bt_behavior) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[3.312470] (-) TimerEvent: {}
+[3.412968] (-) TimerEvent: {}
+[3.457181] (bt_behavior) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[3.457629] (bt_behavior) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[3.513130] (-) TimerEvent: {}
+[3.613702] (-) TimerEvent: {}
+[3.625113] (bt_behavior) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[3.627806] (bt_behavior) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[3.713893] (-) TimerEvent: {}
+[3.814544] (-) TimerEvent: {}
+[3.915166] (-) TimerEvent: {}
+[3.974572] (bt_behavior) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 2.4.0 (/opt/ros/foxy/share/rclcpp_lifecycle/cmake)\n'}
+[4.015380] (-) TimerEvent: {}
+[4.063836] (bt_behavior) StdoutLine: {'line': b'-- Found rclcpp_action: 2.4.0 (/opt/ros/foxy/share/rclcpp_action/cmake)\n'}
+[4.115610] (-) TimerEvent: {}
+[4.216536] (-) TimerEvent: {}
+[4.247959] (bt_behavior) StdoutLine: {'line': b'-- Found behaviortree_cpp_v3: 3.6.0 (/opt/ros/foxy/share/behaviortree_cpp_v3/cmake)\n'}
+[4.266765] (bt_behavior) StdoutLine: {'line': b'-- Found geometry_msgs: 2.0.4 (/opt/ros/foxy/share/geometry_msgs/cmake)\n'}
+[4.316706] (-) TimerEvent: {}
+[4.338700] (bt_behavior) StdoutLine: {'line': b'-- Found nav2_msgs: 0.4.7 (/opt/ros/foxy/share/nav2_msgs/cmake)\n'}
+[4.416880] (-) TimerEvent: {}
+[4.517495] (-) TimerEvent: {}
+[4.618163] (-) TimerEvent: {}
+[4.718831] (-) TimerEvent: {}
+[4.819482] (-) TimerEvent: {}
+[4.876676] (bt_behavior) StdoutLine: {'line': b'-- Found ament_index_cpp: 1.1.0 (/opt/ros/foxy/share/ament_index_cpp/cmake)\n'}
+[4.889671] (bt_behavior) StdoutLine: {'line': b'-- Found ZMQ: /usr/lib/x86_64-linux-gnu/libzmq.so  \n'}
+[4.890161] (bt_behavior) StdoutLine: {'line': b'-- ZeroMQ found.\n'}
+[4.919707] (-) TimerEvent: {}
+[4.943527] (bt_behavior) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[5.019862] (-) TimerEvent: {}
+[5.120464] (-) TimerEvent: {}
+[5.221047] (-) TimerEvent: {}
+[5.308645] (bt_behavior) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/foxy/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[5.312709] (bt_behavior) StdoutLine: {'line': b'-- Check if compiler accepts -pthread\n'}
+[5.321216] (-) TimerEvent: {}
+[5.421825] (-) TimerEvent: {}
+[5.485293] (bt_behavior) StdoutLine: {'line': b'-- Check if compiler accepts -pthread - yes\n'}
+[5.521470] (bt_behavior) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[5.521918] (-) TimerEvent: {}
+[5.527669] (bt_behavior) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[5.528298] (bt_behavior) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/carlos/colcon.ws/src/navigation_Roboros/bt_behavior/include\n'}
+[5.528600] (bt_behavior) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[5.532552] (bt_behavior) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[5.532923] (bt_behavior) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[5.535501] (bt_behavior) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[5.538597] (bt_behavior) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.541598] (bt_behavior) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[5.545464] (bt_behavior) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[5.545890] (bt_behavior) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[5.548327] (bt_behavior) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.563024] (bt_behavior) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.622163] (-) TimerEvent: {}
+[5.626403] (bt_behavior) StdoutLine: {'line': b'-- Generating done\n'}
+[5.630330] (bt_behavior) StdoutLine: {'line': b'-- Build files have been written to: /home/carlos/colcon.ws/src/navigation_Roboros/build/bt_behavior\n'}
+[5.655490] (bt_behavior) CommandEnded: {'returncode': 0}
+[5.657696] (bt_behavior) JobProgress: {'identifier': 'bt_behavior', 'progress': 'build'}
+[5.659969] (bt_behavior) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/carlos/colcon.ws/src/navigation_Roboros/build/bt_behavior', '--', '-j8', '-l8'], 'cwd': '/home/carlos/colcon.ws/src/navigation_Roboros/build/bt_behavior', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'carlos'), ('LC_TIME', 'es_ES.UTF-8'), ('SSH_AGENT_PID', '2014'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/carlos/colcon.ws/install/velocity_controllers/lib:/home/carlos/colcon.ws/install/test_ci/lib:/home/carlos/colcon.ws/install/rqt_cascade_hfsm/lib:/home/carlos/colcon.ws/install/rplidar_ros/lib:/home/carlos/colcon.ws/install/ros2talk_msgs/lib:/home/carlos/colcon.ws/install/position_controllers/lib:/home/carlos/colcon.ws/install/laser_filters/lib:/home/carlos/colcon.ws/install/kobuki_safety_controller/lib:/home/carlos/colcon.ws/install/kobuki_random_walker/lib:/home/carlos/colcon.ws/install/kobuki_node/lib:/home/carlos/colcon.ws/install/kobuki_keyop/lib:/home/carlos/colcon.ws/install/kobuki_bumper2pc/lib:/home/carlos/colcon.ws/install/kobuki_auto_docking/lib:/home/carlos/colcon.ws/install/kobuki_ros_interfaces/lib:/home/carlos/colcon.ws/install/joint_trajectory_controller/lib:/home/carlos/colcon.ws/install/joint_state_controller/lib:/home/carlos/colcon.ws/install/joint_state_broadcaster/lib:/home/carlos/colcon.ws/install/imu_sensor_broadcaster/lib:/home/carlos/colcon.ws/install/gripper_controllers/lib:/home/carlos/colcon.ws/install/gazebo_ros2_control/lib:/home/carlos/colcon.ws/install/effort_controllers/lib:/home/carlos/colcon.ws/install/forward_command_controller/lib:/home/carlos/colcon.ws/install/force_torque_sensor_broadcaster/lib:/home/carlos/colcon.ws/install/diff_drive_controller/lib:/home/carlos/colcon.ws/install/controller_manager/lib:/home/carlos/colcon.ws/install/controller_interface/lib:/home/carlos/colcon.ws/install/hardware_interface/lib:/home/carlos/colcon.ws/install/groot/lib:/home/carlos/colcon.ws/install/follow_wall/lib:/home/carlos/colcon.ws/install/follow-wall/lib:/home/carlos/colcon.ws/install/example_test/lib:/home/carlos/colcon.ws/install/diagnostic_aggregator/lib:/home/carlos/colcon.ws/install/controller_manager_msgs/lib:/home/carlos/colcon.ws/install/blackboard/lib:/home/carlos/colcon.ws/install/blackboard_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/carlos'), ('OLDPWD', '/home/carlos/colcon.ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_ES.UTF-8'), ('MANAGERPID', '1777'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/carlos/colcon.ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'carlos'), ('JOURNAL_STREAM', '8:51775'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'carlos'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/carlos-rob:@/tmp/.ICE-unix/2048,unix/carlos-rob:/tmp/.ICE-unix/2048'), ('INVOCATION_ID', '752aedcadd1543d0b44e11f887b3bf11'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fbe6396c_d19d_4fae_89d1_3eded9a2cb8f'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.121'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/carlos/colcon.ws/install/worlds:/home/carlos/colcon.ws/install/gazebo_ros2_control_demos:/home/carlos/colcon.ws/install/ros2_controllers:/home/carlos/colcon.ws/install/velocity_controllers:/home/carlos/colcon.ws/install/urdf_test:/home/carlos/colcon.ws/install/tiago_simulation:/home/carlos/colcon.ws/install/tiago_robot:/home/carlos/colcon.ws/install/tiago_2dnav_gazebo:/home/carlos/colcon.ws/install/tiago_gazebo:/home/carlos/colcon.ws/install/tiago_bringup:/home/carlos/colcon.ws/install/pmb2_robot:/home/carlos/colcon.ws/install/pmb2_bringup:/home/carlos/colcon.ws/install/twist_mux:/home/carlos/colcon.ws/install/transmission_interface:/home/carlos/colcon.ws/install/tiago_description:/home/carlos/colcon.ws/install/tiago_description_calibration:/home/carlos/colcon.ws/install/tiago_controller_configuration:/home/carlos/colcon.ws/install/test_hfsm:/home/carlos/colcon.ws/install/test_ci:/home/carlos/colcon.ws/install/services_ros2:/home/carlos/colcon.ws/install/self_test:/home/carlos/colcon.ws/install/rqt_cascade_hfsm:/home/carlos/colcon.ws/install/rplidar_ros:/home/carlos/colcon.ws/install/actions_ros2:/home/carlos/colcon.ws/install/ros2talk_msgs:/home/carlos/colcon.ws/install/ros2_control:/home/carlos/colcon.ws/install/ros2controlcli:/home/carlos/colcon.ws/install/ros2_control_test_assets:/home/carlos/colcon.ws/install/pal_gripper:/home/carlos/colcon.ws/install/pal_gripper_controller_configuration:/home/carlos/colcon.ws/install/position_controllers:/home/carlos/colcon.ws/install/pmb2_navigation:/home/carlos/colcon.ws/install/pmb2_2dnav:/home/carlos/colcon.ws/install/pmb2_maps:/home/carlos/colcon.ws/install/pmb2_description:/home/carlos/colcon.ws/install/pmb2_controller_configuration:/home/carlos/colcon.ws/install/parameters_ros2:/home/carlos/colcon.ws/install/pal_gripper_description:/home/carlos/colcon.ws/install/pal_gazebo_worlds:/home/carlos/colcon.ws/install/lifecycle_nodes_ros2:/home/carlos/colcon.ws/install/launchers_ros2:/home/carlos/colcon.ws/install/launch_pal:/home/carlos/colcon.ws/install/laser_filters:/home/carlos/colcon.ws/install/kobuki_ros:/home/carlos/colcon.ws/install/kobuki_safety_controller:/home/carlos/colcon.ws/install/kobuki_random_walker:/home/carlos/colcon.ws/install/kobuki_node:/home/carlos/colcon.ws/install/kobuki_keyop:/home/carlos/colcon.ws/install/kobuki_bumper2pc:/home/carlos/colcon.ws/install/kobuki_auto_docking:/home/carlos/colcon.ws/install/kobuki_ros_interfaces:/home/carlos/colcon.ws/install/kobuki_description:/home/carlos/colcon.ws/install/joint_trajectory_controller:/home/carlos/colcon.ws/install/joint_state_controller:/home/carlos/colcon.ws/install/joint_state_broadcaster:/home/carlos/colcon.ws/install/ir_tiago:/home/carlos/colcon.ws/install/ir_kobuki:/home/carlos/colcon.ws/install/intro_ros2:/home/carlos/colcon.ws/install/intro_py_ros2:/home/carlos/colcon.ws/install/imu_sensor_broadcaster:/home/carlos/colcon.ws/install/hey5_description:/home/carlos/colcon.ws/install/gripper_controllers:/home/carlos/colcon.ws/install/gazebo_ros2_control:/home/carlos/colcon.ws/install/effort_controllers:/home/carlos/colcon.ws/install/forward_command_controller:/home/carlos/colcon.ws/install/force_torque_sensor_broadcaster:/home/carlos/colcon.ws/install/diff_drive_controller:/home/carlos/colcon.ws/install/controller_manager:/home/carlos/colcon.ws/install/controller_interface:/home/carlos/colcon.ws/install/hardware_interface:/home/carlos/colcon.ws/install/groot:/home/carlos/colcon.ws/install/follow_wall:/home/carlos/colcon.ws/install/follow-wall:/home/carlos/colcon.ws/install/example_test:/home/carlos/colcon.ws/install/ejemplo:/home/carlos/colcon.ws/install/diagnostic_updater:/home/carlos/colcon.ws/install/diagnostic_aggregator:/home/carlos/colcon.ws/install/controller_manager_msgs:/home/carlos/colcon.ws/install/br2_tiago:/home/carlos/colcon.ws/install/br2_navigation:/home/carlos/colcon.ws/install/blackboard:/home/carlos/colcon.ws/install/blackboard_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/carlos/colcon.ws/src/navigation_Roboros/build/bt_behavior'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/carlos/colcon.ws/install/urdf_test/lib/python3.8/site-packages:/home/carlos/colcon.ws/install/tiago_description/lib/python3.8/site-packages:/home/carlos/colcon.ws/install/ros2talk_msgs/lib/python3.8/site-packages:/home/carlos/colcon.ws/install/ros2controlcli/lib/python3.8/site-packages:/home/carlos/colcon.ws/install/pmb2_description/lib/python3.8/site-packages:/home/carlos/colcon.ws/install/launch_pal/lib/python3.8/site-packages:/home/carlos/colcon.ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:/home/carlos/colcon.ws/install/intro_py_ros2/lib/python3.8/site-packages:/home/carlos/colcon.ws/install/controller_manager/lib/python3.8/site-packages:/home/carlos/colcon.ws/install/diagnostic_updater/lib/python3.8/site-packages:/home/carlos/colcon.ws/install/diagnostic_aggregator/lib/python3.8/site-packages:/home/carlos/colcon.ws/install/controller_manager_msgs/lib/python3.8/site-packages:/home/carlos/colcon.ws/install/blackboard_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'es_ES.UTF-8'), ('LC_PAPER', 'es_ES.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/carlos/colcon.ws/install/worlds:/home/carlos/colcon.ws/install/gazebo_ros2_control_demos:/home/carlos/colcon.ws/install/ros2_controllers:/home/carlos/colcon.ws/install/velocity_controllers:/home/carlos/colcon.ws/install/urdf_test:/home/carlos/colcon.ws/install/tiago_simulation:/home/carlos/colcon.ws/install/tiago_robot:/home/carlos/colcon.ws/install/tiago_2dnav_gazebo:/home/carlos/colcon.ws/install/tiago_gazebo:/home/carlos/colcon.ws/install/tiago_bringup:/home/carlos/colcon.ws/install/pmb2_robot:/home/carlos/colcon.ws/install/pmb2_bringup:/home/carlos/colcon.ws/install/twist_mux:/home/carlos/colcon.ws/install/transmission_interface:/home/carlos/colcon.ws/install/tiago_description:/home/carlos/colcon.ws/install/tiago_description_calibration:/home/carlos/colcon.ws/install/tiago_controller_configuration:/home/carlos/colcon.ws/install/test_hfsm:/home/carlos/colcon.ws/install/test_ci:/home/carlos/colcon.ws/install/services_ros2:/home/carlos/colcon.ws/install/self_test:/home/carlos/colcon.ws/install/rqt_cascade_hfsm:/home/carlos/colcon.ws/install/rplidar_ros:/home/carlos/colcon.ws/install/actions_ros2:/home/carlos/colcon.ws/install/ros2talk_msgs:/home/carlos/colcon.ws/install/ros2_control:/home/carlos/colcon.ws/install/ros2_control_test_assets:/home/carlos/colcon.ws/install/pal_gripper:/home/carlos/colcon.ws/install/pal_gripper_controller_configuration:/home/carlos/colcon.ws/install/position_controllers:/home/carlos/colcon.ws/install/pmb2_navigation:/home/carlos/colcon.ws/install/pmb2_2dnav:/home/carlos/colcon.ws/install/pmb2_maps:/home/carlos/colcon.ws/install/pmb2_description:/home/carlos/colcon.ws/install/pmb2_controller_configuration:/home/carlos/colcon.ws/install/parameters_ros2:/home/carlos/colcon.ws/install/pal_gripper_description:/home/carlos/colcon.ws/install/pal_gazebo_worlds:/home/carlos/colcon.ws/install/lifecycle_nodes_ros2:/home/carlos/colcon.ws/install/launchers_ros2:/home/carlos/colcon.ws/install/laser_filters:/home/carlos/colcon.ws/install/kobuki_ros:/home/carlos/colcon.ws/install/kobuki_safety_controller:/home/carlos/colcon.ws/install/kobuki_random_walker:/home/carlos/colcon.ws/install/kobuki_node:/home/carlos/colcon.ws/install/kobuki_keyop:/home/carlos/colcon.ws/install/kobuki_bumper2pc:/home/carlos/colcon.ws/install/kobuki_auto_docking:/home/carlos/colcon.ws/install/kobuki_ros_interfaces:/home/carlos/colcon.ws/install/kobuki_description:/home/carlos/colcon.ws/install/joint_trajectory_controller:/home/carlos/colcon.ws/install/joint_state_controller:/home/carlos/colcon.ws/install/joint_state_broadcaster:/home/carlos/colcon.ws/install/ir_tiago:/home/carlos/colcon.ws/install/ir_kobuki:/home/carlos/colcon.ws/install/intro_ros2:/home/carlos/colcon.ws/install/imu_sensor_broadcaster:/home/carlos/colcon.ws/install/hey5_description:/home/carlos/colcon.ws/install/gripper_controllers:/home/carlos/colcon.ws/install/gazebo_ros2_control:/home/carlos/colcon.ws/install/effort_controllers:/home/carlos/colcon.ws/install/forward_command_controller:/home/carlos/colcon.ws/install/force_torque_sensor_broadcaster:/home/carlos/colcon.ws/install/diff_drive_controller:/home/carlos/colcon.ws/install/controller_manager:/home/carlos/colcon.ws/install/controller_interface:/home/carlos/colcon.ws/install/hardware_interface:/home/carlos/colcon.ws/install/groot:/home/carlos/colcon.ws/install/follow_wall:/home/carlos/colcon.ws/install/follow-wall:/home/carlos/colcon.ws/install/example_test:/home/carlos/colcon.ws/install/ejemplo:/home/carlos/colcon.ws/install/diagnostic_updater:/home/carlos/colcon.ws/install/diagnostic_aggregator:/home/carlos/colcon.ws/install/controller_manager_msgs:/home/carlos/colcon.ws/install/br2_tiago:/home/carlos/colcon.ws/install/br2_navigation:/home/carlos/colcon.ws/install/blackboard:/home/carlos/colcon.ws/install/blackboard_msgs:/home/carlos/colcon.ws/install/ros2controlcli:/home/carlos/colcon.ws/install/launch_pal:/home/carlos/colcon.ws/install/intro_py_ros2:/opt/ros/foxy')]), 'shell': False}
+[5.722355] (-) TimerEvent: {}
+[5.774893] (bt_behavior) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target gtest_main\x1b[0m\n'}
+[5.775442] (bt_behavior) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target patrolling_main\x1b[0m\n'}
+[5.777348] (bt_behavior) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target br2_move_bt_node\x1b[0m\n'}
+[5.777818] (bt_behavior) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target br2_patrol_bt_node\x1b[0m\n'}
+[5.782651] (bt_behavior) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target gtest\x1b[0m\n'}
+[5.814833] (bt_behavior) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[5.822548] (-) TimerEvent: {}
+[5.831075] (bt_behavior) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[5.922713] (-) TimerEvent: {}
+[5.924952] (bt_behavior) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/br2_patrol_bt_node.dir/src/bt_behavior/Patrol.cpp.o\x1b[0m\n'}
+[5.929977] (bt_behavior) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/patrolling_main.dir/src/patrolling_main.cpp.o\x1b[0m\n'}
+[5.932625] (bt_behavior) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/br2_move_bt_node.dir/src/bt_behavior/Move.cpp.o\x1b[0m\n'}
+[6.022920] (-) TimerEvent: {}
+[6.123705] (-) TimerEvent: {}
+[6.224452] (-) TimerEvent: {}
+[6.325669] (-) TimerEvent: {}
+[6.426371] (-) TimerEvent: {}
+[6.527144] (-) TimerEvent: {}
+[6.627968] (-) TimerEvent: {}
+[6.728912] (-) TimerEvent: {}
+[6.829670] (-) TimerEvent: {}
+[6.930761] (-) TimerEvent: {}
+[7.031439] (-) TimerEvent: {}
+[7.132430] (-) TimerEvent: {}
+[7.233299] (-) TimerEvent: {}
+[7.334010] (-) TimerEvent: {}
+[7.434706] (-) TimerEvent: {}
+[7.535515] (-) TimerEvent: {}
+[7.636260] (-) TimerEvent: {}
+[7.737227] (-) TimerEvent: {}
+[7.837942] (-) TimerEvent: {}
+[7.938657] (-) TimerEvent: {}
+[8.039574] (-) TimerEvent: {}
+[8.140543] (-) TimerEvent: {}
+[8.241524] (-) TimerEvent: {}
+[8.342407] (-) TimerEvent: {}
+[8.443333] (-) TimerEvent: {}
+[8.544269] (-) TimerEvent: {}
+[8.645264] (-) TimerEvent: {}
+[8.746147] (-) TimerEvent: {}
+[8.846997] (-) TimerEvent: {}
+[8.947953] (-) TimerEvent: {}
+[9.048989] (-) TimerEvent: {}
+[9.149721] (-) TimerEvent: {}
+[9.250541] (-) TimerEvent: {}
+[9.351400] (-) TimerEvent: {}
+[9.452226] (-) TimerEvent: {}
+[9.553166] (-) TimerEvent: {}
+[9.653888] (-) TimerEvent: {}
+[9.754654] (-) TimerEvent: {}
+[9.855436] (-) TimerEvent: {}
+[9.956317] (-) TimerEvent: {}
+[10.057095] (-) TimerEvent: {}
+[10.157829] (-) TimerEvent: {}
+[10.258756] (-) TimerEvent: {}
+[10.359583] (-) TimerEvent: {}
+[10.423370] (bt_behavior) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[10.459800] (-) TimerEvent: {}
+[10.560930] (-) TimerEvent: {}
+[10.595769] (bt_behavior) StdoutLine: {'line': b'[ 50%] Built target gtest_main\n'}
+[10.661131] (-) TimerEvent: {}
+[10.762562] (-) TimerEvent: {}
+[10.863293] (-) TimerEvent: {}
+[10.964024] (-) TimerEvent: {}
+[11.064774] (-) TimerEvent: {}
+[11.165464] (-) TimerEvent: {}
+[11.266158] (-) TimerEvent: {}
+[11.366892] (-) TimerEvent: {}
+[11.467639] (-) TimerEvent: {}
+[11.568435] (-) TimerEvent: {}
+[11.669442] (-) TimerEvent: {}
+[11.770298] (-) TimerEvent: {}
+[11.871319] (-) TimerEvent: {}
+[11.972123] (-) TimerEvent: {}
+[12.072966] (-) TimerEvent: {}
+[12.173674] (-) TimerEvent: {}
+[12.274410] (-) TimerEvent: {}
+[12.375098] (-) TimerEvent: {}
+[12.475874] (-) TimerEvent: {}
+[12.576652] (-) TimerEvent: {}
+[12.677305] (-) TimerEvent: {}
+[12.778080] (-) TimerEvent: {}
+[12.879772] (-) TimerEvent: {}
+[12.980547] (-) TimerEvent: {}
+[13.081249] (-) TimerEvent: {}
+[13.181978] (-) TimerEvent: {}
+[13.282854] (-) TimerEvent: {}
+[13.383616] (-) TimerEvent: {}
+[13.484430] (-) TimerEvent: {}
+[13.585184] (-) TimerEvent: {}
+[13.685983] (-) TimerEvent: {}
+[13.786920] (-) TimerEvent: {}
+[13.887703] (-) TimerEvent: {}
+[13.988385] (-) TimerEvent: {}
+[14.089065] (-) TimerEvent: {}
+[14.105621] (bt_behavior) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX executable patrolling_main\x1b[0m\n'}
+[14.189290] (-) TimerEvent: {}
+[14.289984] (-) TimerEvent: {}
+[14.390789] (-) TimerEvent: {}
+[14.491555] (-) TimerEvent: {}
+[14.592353] (-) TimerEvent: {}
+[14.693077] (-) TimerEvent: {}
+[14.775886] (bt_behavior) StdoutLine: {'line': b'[ 58%] Built target patrolling_main\n'}
+[14.793255] (-) TimerEvent: {}
+[14.893948] (-) TimerEvent: {}
+[14.994630] (-) TimerEvent: {}
+[15.095259] (-) TimerEvent: {}
+[15.195906] (-) TimerEvent: {}
+[15.296568] (-) TimerEvent: {}
+[15.397181] (-) TimerEvent: {}
+[15.497832] (-) TimerEvent: {}
+[15.583425] (bt_behavior) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libbr2_patrol_bt_node.so\x1b[0m\n'}
+[15.598035] (-) TimerEvent: {}
+[15.698687] (-) TimerEvent: {}
+[15.799392] (-) TimerEvent: {}
+[15.900225] (-) TimerEvent: {}
+[16.000884] (-) TimerEvent: {}
+[16.101564] (-) TimerEvent: {}
+[16.157248] (bt_behavior) StdoutLine: {'line': b'[ 66%] Built target br2_patrol_bt_node\n'}
+[16.201756] (-) TimerEvent: {}
+[16.302386] (-) TimerEvent: {}
+[16.403076] (-) TimerEvent: {}
+[16.503686] (-) TimerEvent: {}
+[16.604328] (-) TimerEvent: {}
+[16.628249] (bt_behavior) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[16.704527] (-) TimerEvent: {}
+[16.764995] (bt_behavior) StdoutLine: {'line': b'[ 75%] Built target gtest\n'}
+[16.794992] (bt_behavior) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target bt_action_test\x1b[0m\n'}
+[16.804689] (-) TimerEvent: {}
+[16.895163] (bt_behavior) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object tests/CMakeFiles/bt_action_test.dir/bt_action_test.cpp.o\x1b[0m\n'}
+[16.904887] (-) TimerEvent: {}
+[17.005567] (-) TimerEvent: {}
+[17.106200] (-) TimerEvent: {}
+[17.128730] (bt_behavior) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking CXX shared library libbr2_move_bt_node.so\x1b[0m\n'}
+[17.206365] (-) TimerEvent: {}
+[17.307342] (-) TimerEvent: {}
+[17.408196] (-) TimerEvent: {}
+[17.509040] (-) TimerEvent: {}
+[17.609850] (-) TimerEvent: {}
+[17.665189] (bt_behavior) StdoutLine: {'line': b'[ 91%] Built target br2_move_bt_node\n'}
+[17.710057] (-) TimerEvent: {}
+[17.810727] (-) TimerEvent: {}
+[17.911438] (-) TimerEvent: {}
+[18.012130] (-) TimerEvent: {}
+[18.112769] (-) TimerEvent: {}
+[18.213406] (-) TimerEvent: {}
+[18.314081] (-) TimerEvent: {}
+[18.414784] (-) TimerEvent: {}
+[18.515457] (-) TimerEvent: {}
+[18.616158] (-) TimerEvent: {}
+[18.716812] (-) TimerEvent: {}
+[18.817494] (-) TimerEvent: {}
+[18.918158] (-) TimerEvent: {}
+[19.018858] (-) TimerEvent: {}
+[19.119710] (-) TimerEvent: {}
+[19.220371] (-) TimerEvent: {}
+[19.321047] (-) TimerEvent: {}
+[19.421726] (-) TimerEvent: {}
+[19.522391] (-) TimerEvent: {}
+[19.623059] (-) TimerEvent: {}
+[19.723749] (-) TimerEvent: {}
+[19.824392] (-) TimerEvent: {}
+[19.925060] (-) TimerEvent: {}
+[20.025757] (-) TimerEvent: {}
+[20.126464] (-) TimerEvent: {}
+[20.227164] (-) TimerEvent: {}
+[20.327807] (-) TimerEvent: {}
+[20.428481] (-) TimerEvent: {}
+[20.529254] (-) TimerEvent: {}
+[20.629920] (-) TimerEvent: {}
+[20.730543] (-) TimerEvent: {}
+[20.831221] (-) TimerEvent: {}
+[20.931922] (-) TimerEvent: {}
+[21.032561] (-) TimerEvent: {}
+[21.133232] (-) TimerEvent: {}
+[21.233869] (-) TimerEvent: {}
+[21.334595] (-) TimerEvent: {}
+[21.435260] (-) TimerEvent: {}
+[21.535942] (-) TimerEvent: {}
+[21.636597] (-) TimerEvent: {}
+[21.737260] (-) TimerEvent: {}
+[21.837896] (-) TimerEvent: {}
+[21.938583] (-) TimerEvent: {}
+[22.039265] (-) TimerEvent: {}
+[22.139960] (-) TimerEvent: {}
+[22.240675] (-) TimerEvent: {}
+[22.341290] (-) TimerEvent: {}
+[22.441914] (-) TimerEvent: {}
+[22.542533] (-) TimerEvent: {}
+[22.643189] (-) TimerEvent: {}
+[22.743819] (-) TimerEvent: {}
+[22.844474] (-) TimerEvent: {}
+[22.945083] (-) TimerEvent: {}
+[23.045871] (-) TimerEvent: {}
+[23.146532] (-) TimerEvent: {}
+[23.247332] (-) TimerEvent: {}
+[23.348324] (-) TimerEvent: {}
+[23.448942] (-) TimerEvent: {}
+[23.549710] (-) TimerEvent: {}
+[23.650457] (-) TimerEvent: {}
+[23.751155] (-) TimerEvent: {}
+[23.851841] (-) TimerEvent: {}
+[23.952566] (-) TimerEvent: {}
+[24.053413] (-) TimerEvent: {}
+[24.154273] (-) TimerEvent: {}
+[24.254846] (-) TimerEvent: {}
+[24.355396] (-) TimerEvent: {}
+[24.456036] (-) TimerEvent: {}
+[24.556682] (-) TimerEvent: {}
+[24.657329] (-) TimerEvent: {}
+[24.757982] (-) TimerEvent: {}
+[24.858647] (-) TimerEvent: {}
+[24.959435] (-) TimerEvent: {}
+[25.060273] (-) TimerEvent: {}
+[25.160921] (-) TimerEvent: {}
+[25.261574] (-) TimerEvent: {}
+[25.362143] (-) TimerEvent: {}
+[25.462813] (-) TimerEvent: {}
+[25.563593] (-) TimerEvent: {}
+[25.664212] (-) TimerEvent: {}
+[25.764847] (-) TimerEvent: {}
+[25.865551] (-) TimerEvent: {}
+[25.966270] (-) TimerEvent: {}
+[26.067080] (-) TimerEvent: {}
+[26.167828] (-) TimerEvent: {}
+[26.268487] (-) TimerEvent: {}
+[26.369189] (-) TimerEvent: {}
+[26.469854] (-) TimerEvent: {}
+[26.570524] (-) TimerEvent: {}
+[26.671336] (-) TimerEvent: {}
+[26.772081] (-) TimerEvent: {}
+[26.872733] (-) TimerEvent: {}
+[26.973477] (-) TimerEvent: {}
+[27.074273] (-) TimerEvent: {}
+[27.175066] (-) TimerEvent: {}
+[27.275754] (-) TimerEvent: {}
+[27.376370] (-) TimerEvent: {}
+[27.477005] (-) TimerEvent: {}
+[27.577623] (-) TimerEvent: {}
+[27.678208] (-) TimerEvent: {}
+[27.778887] (-) TimerEvent: {}
+[27.879554] (-) TimerEvent: {}
+[27.980299] (-) TimerEvent: {}
+[28.080987] (-) TimerEvent: {}
+[28.181611] (-) TimerEvent: {}
+[28.282225] (-) TimerEvent: {}
+[28.382865] (-) TimerEvent: {}
+[28.483553] (-) TimerEvent: {}
+[28.584250] (-) TimerEvent: {}
+[28.684965] (-) TimerEvent: {}
+[28.785785] (-) TimerEvent: {}
+[28.886631] (-) TimerEvent: {}
+[28.987236] (-) TimerEvent: {}
+[29.087881] (-) TimerEvent: {}
+[29.188559] (-) TimerEvent: {}
+[29.289349] (-) TimerEvent: {}
+[29.390005] (-) TimerEvent: {}
+[29.490673] (-) TimerEvent: {}
+[29.591364] (-) TimerEvent: {}
+[29.692114] (-) TimerEvent: {}
+[29.792759] (-) TimerEvent: {}
+[29.893389] (-) TimerEvent: {}
+[29.994216] (-) TimerEvent: {}
+[30.094845] (-) TimerEvent: {}
+[30.195567] (-) TimerEvent: {}
+[30.296315] (-) TimerEvent: {}
+[30.397139] (-) TimerEvent: {}
+[30.497776] (-) TimerEvent: {}
+[30.598463] (-) TimerEvent: {}
+[30.699117] (-) TimerEvent: {}
+[30.799790] (-) TimerEvent: {}
+[30.900421] (-) TimerEvent: {}
+[31.001069] (-) TimerEvent: {}
+[31.101680] (-) TimerEvent: {}
+[31.202275] (-) TimerEvent: {}
+[31.302934] (-) TimerEvent: {}
+[31.403599] (-) TimerEvent: {}
+[31.504228] (-) TimerEvent: {}
+[31.604861] (-) TimerEvent: {}
+[31.705489] (-) TimerEvent: {}
+[31.806104] (-) TimerEvent: {}
+[31.906739] (-) TimerEvent: {}
+[32.007386] (-) TimerEvent: {}
+[32.108036] (-) TimerEvent: {}
+[32.208704] (-) TimerEvent: {}
+[32.309297] (-) TimerEvent: {}
+[32.409916] (-) TimerEvent: {}
+[32.510561] (-) TimerEvent: {}
+[32.611185] (-) TimerEvent: {}
+[32.711898] (-) TimerEvent: {}
+[32.812777] (-) TimerEvent: {}
+[32.913458] (-) TimerEvent: {}
+[33.014068] (-) TimerEvent: {}
+[33.114648] (-) TimerEvent: {}
+[33.215203] (-) TimerEvent: {}
+[33.315748] (-) TimerEvent: {}
+[33.416442] (-) TimerEvent: {}
+[33.517082] (-) TimerEvent: {}
+[33.617728] (-) TimerEvent: {}
+[33.718335] (-) TimerEvent: {}
+[33.818929] (-) TimerEvent: {}
+[33.919534] (-) TimerEvent: {}
+[34.020191] (-) TimerEvent: {}
+[34.120833] (-) TimerEvent: {}
+[34.221472] (-) TimerEvent: {}
+[34.322162] (-) TimerEvent: {}
+[34.422922] (-) TimerEvent: {}
+[34.523654] (-) TimerEvent: {}
+[34.584771] (bt_behavior) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable bt_action_test\x1b[0m\n'}
+[34.623841] (-) TimerEvent: {}
+[34.724526] (-) TimerEvent: {}
+[34.825280] (-) TimerEvent: {}
+[34.926080] (-) TimerEvent: {}
+[35.026749] (-) TimerEvent: {}
+[35.127412] (-) TimerEvent: {}
+[35.228078] (-) TimerEvent: {}
+[35.328701] (-) TimerEvent: {}
+[35.429338] (-) TimerEvent: {}
+[35.529946] (-) TimerEvent: {}
+[35.630582] (-) TimerEvent: {}
+[35.731163] (-) TimerEvent: {}
+[35.769358] (bt_behavior) StdoutLine: {'line': b'[100%] Built target bt_action_test\n'}
+[35.797054] (bt_behavior) CommandEnded: {'returncode': 0}
+[35.831598] (-) TimerEvent: {}
+[35.899827] (bt_behavior) JobProgress: {'identifier': 'bt_behavior', 'progress': 'install'}
+[35.929777] (bt_behavior) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/carlos/colcon.ws/src/navigation_Roboros/build/bt_behavior'], 'cwd': '/home/carlos/colcon.ws/src/navigation_Roboros/build/bt_behavior', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'carlos'), ('LC_TIME', 'es_ES.UTF-8'), ('SSH_AGENT_PID', '2014'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/carlos/colcon.ws/install/velocity_controllers/lib:/home/carlos/colcon.ws/install/test_ci/lib:/home/carlos/colcon.ws/install/rqt_cascade_hfsm/lib:/home/carlos/colcon.ws/install/rplidar_ros/lib:/home/carlos/colcon.ws/install/ros2talk_msgs/lib:/home/carlos/colcon.ws/install/position_controllers/lib:/home/carlos/colcon.ws/install/laser_filters/lib:/home/carlos/colcon.ws/install/kobuki_safety_controller/lib:/home/carlos/colcon.ws/install/kobuki_random_walker/lib:/home/carlos/colcon.ws/install/kobuki_node/lib:/home/carlos/colcon.ws/install/kobuki_keyop/lib:/home/carlos/colcon.ws/install/kobuki_bumper2pc/lib:/home/carlos/colcon.ws/install/kobuki_auto_docking/lib:/home/carlos/colcon.ws/install/kobuki_ros_interfaces/lib:/home/carlos/colcon.ws/install/joint_trajectory_controller/lib:/home/carlos/colcon.ws/install/joint_state_controller/lib:/home/carlos/colcon.ws/install/joint_state_broadcaster/lib:/home/carlos/colcon.ws/install/imu_sensor_broadcaster/lib:/home/carlos/colcon.ws/install/gripper_controllers/lib:/home/carlos/colcon.ws/install/gazebo_ros2_control/lib:/home/carlos/colcon.ws/install/effort_controllers/lib:/home/carlos/colcon.ws/install/forward_command_controller/lib:/home/carlos/colcon.ws/install/force_torque_sensor_broadcaster/lib:/home/carlos/colcon.ws/install/diff_drive_controller/lib:/home/carlos/colcon.ws/install/controller_manager/lib:/home/carlos/colcon.ws/install/controller_interface/lib:/home/carlos/colcon.ws/install/hardware_interface/lib:/home/carlos/colcon.ws/install/groot/lib:/home/carlos/colcon.ws/install/follow_wall/lib:/home/carlos/colcon.ws/install/follow-wall/lib:/home/carlos/colcon.ws/install/example_test/lib:/home/carlos/colcon.ws/install/diagnostic_aggregator/lib:/home/carlos/colcon.ws/install/controller_manager_msgs/lib:/home/carlos/colcon.ws/install/blackboard/lib:/home/carlos/colcon.ws/install/blackboard_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/carlos'), ('OLDPWD', '/home/carlos/colcon.ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_ES.UTF-8'), ('MANAGERPID', '1777'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/carlos/colcon.ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'carlos'), ('JOURNAL_STREAM', '8:51775'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'carlos'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/carlos-rob:@/tmp/.ICE-unix/2048,unix/carlos-rob:/tmp/.ICE-unix/2048'), ('INVOCATION_ID', '752aedcadd1543d0b44e11f887b3bf11'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fbe6396c_d19d_4fae_89d1_3eded9a2cb8f'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.121'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/carlos/colcon.ws/install/worlds:/home/carlos/colcon.ws/install/gazebo_ros2_control_demos:/home/carlos/colcon.ws/install/ros2_controllers:/home/carlos/colcon.ws/install/velocity_controllers:/home/carlos/colcon.ws/install/urdf_test:/home/carlos/colcon.ws/install/tiago_simulation:/home/carlos/colcon.ws/install/tiago_robot:/home/carlos/colcon.ws/install/tiago_2dnav_gazebo:/home/carlos/colcon.ws/install/tiago_gazebo:/home/carlos/colcon.ws/install/tiago_bringup:/home/carlos/colcon.ws/install/pmb2_robot:/home/carlos/colcon.ws/install/pmb2_bringup:/home/carlos/colcon.ws/install/twist_mux:/home/carlos/colcon.ws/install/transmission_interface:/home/carlos/colcon.ws/install/tiago_description:/home/carlos/colcon.ws/install/tiago_description_calibration:/home/carlos/colcon.ws/install/tiago_controller_configuration:/home/carlos/colcon.ws/install/test_hfsm:/home/carlos/colcon.ws/install/test_ci:/home/carlos/colcon.ws/install/services_ros2:/home/carlos/colcon.ws/install/self_test:/home/carlos/colcon.ws/install/rqt_cascade_hfsm:/home/carlos/colcon.ws/install/rplidar_ros:/home/carlos/colcon.ws/install/actions_ros2:/home/carlos/colcon.ws/install/ros2talk_msgs:/home/carlos/colcon.ws/install/ros2_control:/home/carlos/colcon.ws/install/ros2controlcli:/home/carlos/colcon.ws/install/ros2_control_test_assets:/home/carlos/colcon.ws/install/pal_gripper:/home/carlos/colcon.ws/install/pal_gripper_controller_configuration:/home/carlos/colcon.ws/install/position_controllers:/home/carlos/colcon.ws/install/pmb2_navigation:/home/carlos/colcon.ws/install/pmb2_2dnav:/home/carlos/colcon.ws/install/pmb2_maps:/home/carlos/colcon.ws/install/pmb2_description:/home/carlos/colcon.ws/install/pmb2_controller_configuration:/home/carlos/colcon.ws/install/parameters_ros2:/home/carlos/colcon.ws/install/pal_gripper_description:/home/carlos/colcon.ws/install/pal_gazebo_worlds:/home/carlos/colcon.ws/install/lifecycle_nodes_ros2:/home/carlos/colcon.ws/install/launchers_ros2:/home/carlos/colcon.ws/install/launch_pal:/home/carlos/colcon.ws/install/laser_filters:/home/carlos/colcon.ws/install/kobuki_ros:/home/carlos/colcon.ws/install/kobuki_safety_controller:/home/carlos/colcon.ws/install/kobuki_random_walker:/home/carlos/colcon.ws/install/kobuki_node:/home/carlos/colcon.ws/install/kobuki_keyop:/home/carlos/colcon.ws/install/kobuki_bumper2pc:/home/carlos/colcon.ws/install/kobuki_auto_docking:/home/carlos/colcon.ws/install/kobuki_ros_interfaces:/home/carlos/colcon.ws/install/kobuki_description:/home/carlos/colcon.ws/install/joint_trajectory_controller:/home/carlos/colcon.ws/install/joint_state_controller:/home/carlos/colcon.ws/install/joint_state_broadcaster:/home/carlos/colcon.ws/install/ir_tiago:/home/carlos/colcon.ws/install/ir_kobuki:/home/carlos/colcon.ws/install/intro_ros2:/home/carlos/colcon.ws/install/intro_py_ros2:/home/carlos/colcon.ws/install/imu_sensor_broadcaster:/home/carlos/colcon.ws/install/hey5_description:/home/carlos/colcon.ws/install/gripper_controllers:/home/carlos/colcon.ws/install/gazebo_ros2_control:/home/carlos/colcon.ws/install/effort_controllers:/home/carlos/colcon.ws/install/forward_command_controller:/home/carlos/colcon.ws/install/force_torque_sensor_broadcaster:/home/carlos/colcon.ws/install/diff_drive_controller:/home/carlos/colcon.ws/install/controller_manager:/home/carlos/colcon.ws/install/controller_interface:/home/carlos/colcon.ws/install/hardware_interface:/home/carlos/colcon.ws/install/groot:/home/carlos/colcon.ws/install/follow_wall:/home/carlos/colcon.ws/install/follow-wall:/home/carlos/colcon.ws/install/example_test:/home/carlos/colcon.ws/install/ejemplo:/home/carlos/colcon.ws/install/diagnostic_updater:/home/carlos/colcon.ws/install/diagnostic_aggregator:/home/carlos/colcon.ws/install/controller_manager_msgs:/home/carlos/colcon.ws/install/br2_tiago:/home/carlos/colcon.ws/install/br2_navigation:/home/carlos/colcon.ws/install/blackboard:/home/carlos/colcon.ws/install/blackboard_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/carlos/colcon.ws/src/navigation_Roboros/build/bt_behavior'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/carlos/colcon.ws/install/urdf_test/lib/python3.8/site-packages:/home/carlos/colcon.ws/install/tiago_description/lib/python3.8/site-packages:/home/carlos/colcon.ws/install/ros2talk_msgs/lib/python3.8/site-packages:/home/carlos/colcon.ws/install/ros2controlcli/lib/python3.8/site-packages:/home/carlos/colcon.ws/install/pmb2_description/lib/python3.8/site-packages:/home/carlos/colcon.ws/install/launch_pal/lib/python3.8/site-packages:/home/carlos/colcon.ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:/home/carlos/colcon.ws/install/intro_py_ros2/lib/python3.8/site-packages:/home/carlos/colcon.ws/install/controller_manager/lib/python3.8/site-packages:/home/carlos/colcon.ws/install/diagnostic_updater/lib/python3.8/site-packages:/home/carlos/colcon.ws/install/diagnostic_aggregator/lib/python3.8/site-packages:/home/carlos/colcon.ws/install/controller_manager_msgs/lib/python3.8/site-packages:/home/carlos/colcon.ws/install/blackboard_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'es_ES.UTF-8'), ('LC_PAPER', 'es_ES.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/carlos/colcon.ws/install/worlds:/home/carlos/colcon.ws/install/gazebo_ros2_control_demos:/home/carlos/colcon.ws/install/ros2_controllers:/home/carlos/colcon.ws/install/velocity_controllers:/home/carlos/colcon.ws/install/urdf_test:/home/carlos/colcon.ws/install/tiago_simulation:/home/carlos/colcon.ws/install/tiago_robot:/home/carlos/colcon.ws/install/tiago_2dnav_gazebo:/home/carlos/colcon.ws/install/tiago_gazebo:/home/carlos/colcon.ws/install/tiago_bringup:/home/carlos/colcon.ws/install/pmb2_robot:/home/carlos/colcon.ws/install/pmb2_bringup:/home/carlos/colcon.ws/install/twist_mux:/home/carlos/colcon.ws/install/transmission_interface:/home/carlos/colcon.ws/install/tiago_description:/home/carlos/colcon.ws/install/tiago_description_calibration:/home/carlos/colcon.ws/install/tiago_controller_configuration:/home/carlos/colcon.ws/install/test_hfsm:/home/carlos/colcon.ws/install/test_ci:/home/carlos/colcon.ws/install/services_ros2:/home/carlos/colcon.ws/install/self_test:/home/carlos/colcon.ws/install/rqt_cascade_hfsm:/home/carlos/colcon.ws/install/rplidar_ros:/home/carlos/colcon.ws/install/actions_ros2:/home/carlos/colcon.ws/install/ros2talk_msgs:/home/carlos/colcon.ws/install/ros2_control:/home/carlos/colcon.ws/install/ros2_control_test_assets:/home/carlos/colcon.ws/install/pal_gripper:/home/carlos/colcon.ws/install/pal_gripper_controller_configuration:/home/carlos/colcon.ws/install/position_controllers:/home/carlos/colcon.ws/install/pmb2_navigation:/home/carlos/colcon.ws/install/pmb2_2dnav:/home/carlos/colcon.ws/install/pmb2_maps:/home/carlos/colcon.ws/install/pmb2_description:/home/carlos/colcon.ws/install/pmb2_controller_configuration:/home/carlos/colcon.ws/install/parameters_ros2:/home/carlos/colcon.ws/install/pal_gripper_description:/home/carlos/colcon.ws/install/pal_gazebo_worlds:/home/carlos/colcon.ws/install/lifecycle_nodes_ros2:/home/carlos/colcon.ws/install/launchers_ros2:/home/carlos/colcon.ws/install/laser_filters:/home/carlos/colcon.ws/install/kobuki_ros:/home/carlos/colcon.ws/install/kobuki_safety_controller:/home/carlos/colcon.ws/install/kobuki_random_walker:/home/carlos/colcon.ws/install/kobuki_node:/home/carlos/colcon.ws/install/kobuki_keyop:/home/carlos/colcon.ws/install/kobuki_bumper2pc:/home/carlos/colcon.ws/install/kobuki_auto_docking:/home/carlos/colcon.ws/install/kobuki_ros_interfaces:/home/carlos/colcon.ws/install/kobuki_description:/home/carlos/colcon.ws/install/joint_trajectory_controller:/home/carlos/colcon.ws/install/joint_state_controller:/home/carlos/colcon.ws/install/joint_state_broadcaster:/home/carlos/colcon.ws/install/ir_tiago:/home/carlos/colcon.ws/install/ir_kobuki:/home/carlos/colcon.ws/install/intro_ros2:/home/carlos/colcon.ws/install/imu_sensor_broadcaster:/home/carlos/colcon.ws/install/hey5_description:/home/carlos/colcon.ws/install/gripper_controllers:/home/carlos/colcon.ws/install/gazebo_ros2_control:/home/carlos/colcon.ws/install/effort_controllers:/home/carlos/colcon.ws/install/forward_command_controller:/home/carlos/colcon.ws/install/force_torque_sensor_broadcaster:/home/carlos/colcon.ws/install/diff_drive_controller:/home/carlos/colcon.ws/install/controller_manager:/home/carlos/colcon.ws/install/controller_interface:/home/carlos/colcon.ws/install/hardware_interface:/home/carlos/colcon.ws/install/groot:/home/carlos/colcon.ws/install/follow_wall:/home/carlos/colcon.ws/install/follow-wall:/home/carlos/colcon.ws/install/example_test:/home/carlos/colcon.ws/install/ejemplo:/home/carlos/colcon.ws/install/diagnostic_updater:/home/carlos/colcon.ws/install/diagnostic_aggregator:/home/carlos/colcon.ws/install/controller_manager_msgs:/home/carlos/colcon.ws/install/br2_tiago:/home/carlos/colcon.ws/install/br2_navigation:/home/carlos/colcon.ws/install/blackboard:/home/carlos/colcon.ws/install/blackboard_msgs:/home/carlos/colcon.ws/install/ros2controlcli:/home/carlos/colcon.ws/install/launch_pal:/home/carlos/colcon.ws/install/intro_py_ros2:/opt/ros/foxy')]), 'shell': False}
+[35.931709] (-) TimerEvent: {}
+[35.951221] (bt_behavior) StdoutLine: {'line': b'-- Install configuration: "Debug"\n'}
+[35.951983] (bt_behavior) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[35.952669] (bt_behavior) StdoutLine: {'line': b'-- Symlinking: /home/carlos/colcon.ws/src/navigation_Roboros/install/bt_behavior/lib/libbr2_patrol_bt_node.so\n'}
+[35.979563] (bt_behavior) StdoutLine: {'line': b'-- Symlinking: /home/carlos/colcon.ws/src/navigation_Roboros/install/bt_behavior/lib/libbr2_move_bt_node.so\n'}
+[36.005291] (bt_behavior) StdoutLine: {'line': b'-- Symlinking: /home/carlos/colcon.ws/src/navigation_Roboros/install/bt_behavior/lib/bt_behavior/patrolling_main\n'}
+[36.029667] (bt_behavior) StdoutLine: {'line': b'-- Symlinking: /home/carlos/colcon.ws/src/navigation_Roboros/install/bt_behavior/include//bt_behavior/Move.hpp\n'}
+[36.031853] (-) TimerEvent: {}
+[36.052904] (bt_behavior) StdoutLine: {'line': b'-- Symlinking: /home/carlos/colcon.ws/src/navigation_Roboros/install/bt_behavior/include//bt_behavior/Patrol.hpp\n'}
+[36.075166] (bt_behavior) StdoutLine: {'line': b'-- Symlinking: /home/carlos/colcon.ws/src/navigation_Roboros/install/bt_behavior/include//bt_behavior/ctrl_support/BTActionNode.hpp\n'}
+[36.099967] (bt_behavior) StdoutLine: {'line': b'-- Symlinking: /home/carlos/colcon.ws/src/navigation_Roboros/install/bt_behavior/include//bt_behavior/ctrl_support/BTLifecycleCtrlNode.hpp\n'}
+[36.122340] (bt_behavior) StdoutLine: {'line': b'-- Symlinking: /home/carlos/colcon.ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/behavior_tree_xml/behavior.xml\n'}
+[36.132047] (-) TimerEvent: {}
+[36.143800] (bt_behavior) StdoutLine: {'line': b'-- Symlinking: /home/carlos/colcon.ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/launch/patrolling.launch.py\n'}
+[36.168742] (bt_behavior) StdoutLine: {'line': b'-- Symlinking: /home/carlos/colcon.ws/src/navigation_Roboros/install/bt_behavior/share/ament_index/resource_index/package_run_dependencies/bt_behavior\n'}
+[36.193326] (bt_behavior) StdoutLine: {'line': b'-- Symlinking: /home/carlos/colcon.ws/src/navigation_Roboros/install/bt_behavior/share/ament_index/resource_index/parent_prefix_path/bt_behavior\n'}
+[36.215227] (bt_behavior) StdoutLine: {'line': b'-- Symlinking: /home/carlos/colcon.ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/environment/ament_prefix_path.sh\n'}
+[36.232277] (-) TimerEvent: {}
+[36.236789] (bt_behavior) StdoutLine: {'line': b'-- Symlinking: /home/carlos/colcon.ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/environment/ament_prefix_path.dsv\n'}
+[36.258382] (bt_behavior) StdoutLine: {'line': b'-- Symlinking: /home/carlos/colcon.ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/environment/path.sh\n'}
+[36.280421] (bt_behavior) StdoutLine: {'line': b'-- Symlinking: /home/carlos/colcon.ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/environment/path.dsv\n'}
+[36.306289] (bt_behavior) StdoutLine: {'line': b'-- Symlinking: /home/carlos/colcon.ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/local_setup.bash\n'}
+[36.332445] (-) TimerEvent: {}
+[36.333138] (bt_behavior) StdoutLine: {'line': b'-- Symlinking: /home/carlos/colcon.ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/local_setup.sh\n'}
+[36.354543] (bt_behavior) StdoutLine: {'line': b'-- Symlinking: /home/carlos/colcon.ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/local_setup.zsh\n'}
+[36.378730] (bt_behavior) StdoutLine: {'line': b'-- Symlinking: /home/carlos/colcon.ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/local_setup.dsv\n'}
+[36.401995] (bt_behavior) StdoutLine: {'line': b'-- Symlinking: /home/carlos/colcon.ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/package.dsv\n'}
+[36.425188] (bt_behavior) StdoutLine: {'line': b'-- Symlinking: /home/carlos/colcon.ws/src/navigation_Roboros/install/bt_behavior/share/ament_index/resource_index/packages/bt_behavior\n'}
+[36.432570] (-) TimerEvent: {}
+[36.447286] (bt_behavior) StdoutLine: {'line': b'-- Symlinking: /home/carlos/colcon.ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[36.472935] (bt_behavior) StdoutLine: {'line': b'-- Symlinking: /home/carlos/colcon.ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[36.493250] (bt_behavior) StdoutLine: {'line': b'-- Symlinking: /home/carlos/colcon.ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/cmake/bt_behaviorConfig.cmake\n'}
+[36.513403] (bt_behavior) StdoutLine: {'line': b'-- Symlinking: /home/carlos/colcon.ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/cmake/bt_behaviorConfig-version.cmake\n'}
+[36.532749] (-) TimerEvent: {}
+[36.536089] (bt_behavior) StdoutLine: {'line': b'-- Symlinking: /home/carlos/colcon.ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/package.xml\n'}
+[36.562975] (bt_behavior) CommandEnded: {'returncode': 0}
+[36.633007] (-) TimerEvent: {}
+[36.718134] (bt_behavior) JobEnded: {'identifier': 'bt_behavior', 'rc': 0}
+[36.720153] (-) EventReactorShutdown: {}

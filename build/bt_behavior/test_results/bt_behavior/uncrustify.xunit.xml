@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="bt_behavior.uncrustify"
+  tests="8"
+  failures="0"
+  errors="0"
+  time="0.051"
+>
+  <testcase
+    name="include/bt_behavior/Move.hpp"
+    classname="bt_behavior.uncrustify"/>
+  <testcase
+    name="include/bt_behavior/Patrol.hpp"
+    classname="bt_behavior.uncrustify"/>
+  <testcase
+    name="include/bt_behavior/ctrl_support/BTActionNode.hpp"
+    classname="bt_behavior.uncrustify"/>
+  <testcase
+    name="include/bt_behavior/ctrl_support/BTLifecycleCtrlNode.hpp"
+    classname="bt_behavior.uncrustify"/>
+  <testcase
+    name="src/bt_behavior/Move.cpp"
+    classname="bt_behavior.uncrustify"/>
+  <testcase
+    name="src/bt_behavior/Patrol.cpp"
+    classname="bt_behavior.uncrustify"/>
+  <testcase
+    name="src/patrolling_main.cpp"
+    classname="bt_behavior.uncrustify"/>
+  <testcase
+    name="tests/bt_action_test.cpp"
+    classname="bt_behavior.uncrustify"/>
+  <system-out>Checked files:
+* include/bt_behavior/Move.hpp
+* include/bt_behavior/Patrol.hpp
+* include/bt_behavior/ctrl_support/BTActionNode.hpp
+* include/bt_behavior/ctrl_support/BTLifecycleCtrlNode.hpp
+* src/bt_behavior/Move.cpp
+* src/bt_behavior/Patrol.cpp
+* src/patrolling_main.cpp
+* tests/bt_action_test.cpp</system-out>
+</testsuite>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="0" disabled="0" errors="0" timestamp="2022-02-25T13:23:21" time="21.477" name="AllTests">
+  <testsuite name="bt_action" tests="2" failures="0" disabled="0" errors="0" time="21.477">
+    <testcase name="patrol_btn" status="run" time="15.142" classname="bt_behavior.bt_action" />
+    <testcase name="move_btn" status="run" time="6.335" classname="bt_behavior.bt_action" />
+  </testsuite>
+</testsuites>

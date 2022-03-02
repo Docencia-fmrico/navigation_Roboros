@@ -1,0 +1,26 @@
+-- run_test.py: invoking following command in '/home/carlos/colcon.ws/src/navigation_Roboros/build/bt_behavior/tests':
+ - /home/carlos/colcon.ws/src/navigation_Roboros/build/bt_behavior/tests/bt_action_test --gtest_output=xml:/home/carlos/colcon.ws/src/navigation_Roboros/build/bt_behavior/test_results/bt_behavior/bt_action_test.gtest.xml
+
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from bt_action
+[ RUN      ] bt_action.patrol_btn
+Patrol halt
+Patrol halt
+[       OK ] bt_action.patrol_btn (15142 ms)
+[ RUN      ] bt_action.move_btn
+[INFO] [1645791816.900491476] [move_btn_node]: Waiting for "navigate_to_pose" action server
+[INFO] [1645791816.900736224] [move_btn_node]: "move" BtActionNode initialized
+[INFO] [1645791816.902959530] [move_btn_node]: Waiting for "navigate_to_pose" action server
+[INFO] [1645791823.101164219] [move_btn_node]: navigation Suceeded
+[       OK ] bt_action.move_btn (6335 ms)
+[----------] 2 tests from bt_action (21477 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (21477 ms total)
+[  PASSED  ] 2 tests.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/carlos/colcon.ws/src/navigation_Roboros/build/bt_behavior/test_results/bt_behavior/bt_action_test.gtest.xml'
+-- run_test.py: verify result file '/home/carlos/colcon.ws/src/navigation_Roboros/build/bt_behavior/test_results/bt_behavior/bt_action_test.gtest.xml'

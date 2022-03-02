@@ -1,0 +1,30 @@
+-- run_test.py: invoking following command in '/home/carlos/colcon.ws/src/navigation_Roboros/bt_behavior':
+ - /opt/ros/foxy/bin/ament_cpplint --xunit-file /home/carlos/colcon.ws/src/navigation_Roboros/build/bt_behavior/test_results/bt_behavior/cpplint.xunit.xml
+
+Using '--root=..' argument
+
+Done processing /home/carlos/colcon.ws/src/navigation_Roboros/bt_behavior/tests/bt_action_test.cpp
+
+Using '--root=/home/carlos/colcon.ws/src/navigation_Roboros/bt_behavior/include' argument
+
+Done processing /home/carlos/colcon.ws/src/navigation_Roboros/bt_behavior/include/bt_behavior/Move.hpp
+
+Done processing /home/carlos/colcon.ws/src/navigation_Roboros/bt_behavior/include/bt_behavior/Patrol.hpp
+
+Done processing /home/carlos/colcon.ws/src/navigation_Roboros/bt_behavior/include/bt_behavior/ctrl_support/BTActionNode.hpp
+
+Done processing /home/carlos/colcon.ws/src/navigation_Roboros/bt_behavior/include/bt_behavior/ctrl_support/BTLifecycleCtrlNode.hpp
+
+Using '--root=/home/carlos/colcon.ws/src/navigation_Roboros/bt_behavior/src' argument
+
+Done processing /home/carlos/colcon.ws/src/navigation_Roboros/bt_behavior/src/patrolling_main.cpp
+
+Done processing /home/carlos/colcon.ws/src/navigation_Roboros/bt_behavior/src/bt_behavior/Move.cpp
+
+Done processing /home/carlos/colcon.ws/src/navigation_Roboros/bt_behavior/src/bt_behavior/Patrol.cpp
+
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/carlos/colcon.ws/src/navigation_Roboros/build/bt_behavior/test_results/bt_behavior/cpplint.xunit.xml'

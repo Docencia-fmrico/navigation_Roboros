@@ -1,0 +1,9 @@
+-- run_test.py: invoking following command in '/home/carlos/colcon.ws/src/navigation_Roboros/bt_behavior':
+ - /opt/ros/foxy/bin/ament_pep257 --xunit-file /home/carlos/colcon.ws/src/navigation_Roboros/build/bt_behavior/test_results/bt_behavior/pep257.xunit.xml
+
+checking ./launch/patrolling.launch.py
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/carlos/colcon.ws/src/navigation_Roboros/build/bt_behavior/test_results/bt_behavior/pep257.xunit.xml'
