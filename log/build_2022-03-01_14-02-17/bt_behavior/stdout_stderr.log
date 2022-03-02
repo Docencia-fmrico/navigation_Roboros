@@ -1,0 +1,17 @@
+[35m[1mScanning dependencies of target br2_move_bt_node[0m
+[ 12%] Built target gtest
+[ 25%] Built target gtest_main
+[ 50%] Built target br2_patrol_bt_node
+[ 50%] Built target br2_obstacledetection_bt_node
+[ 62%] Built target patrolling_main
+[ 75%] Built target br2_getwaypoint_bt_node
+[ 81%] [32mBuilding CXX object CMakeFiles/br2_move_bt_node.dir/src/bt_behavior/Move.cpp.o[0m
+[ 93%] Built target bt_action_test
+In file included from [01m[K/home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/bt_behavior/src/bt_behavior/Move.cpp:20[m[K:
+[01m[K/home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/bt_behavior/include/bt_behavior/Move.hpp:27:10:[m[K [01;31m[Kfatal error: [m[Knav_msgs/odometry.hpp: No such file or directory
+   27 | #include [01;31m[K"nav_msgs/odometry.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/br2_move_bt_node.dir/build.make:63: CMakeFiles/br2_move_bt_node.dir/src/bt_behavior/Move.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:181: CMakeFiles/br2_move_bt_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

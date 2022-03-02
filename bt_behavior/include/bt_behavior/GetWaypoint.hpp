@@ -19,10 +19,13 @@
 
 #include "behaviortree_cpp_v3/behavior_tree.h"
 #include "behaviortree_cpp_v3/bt_factory.h"
+ #include "nav2_costmap_2d/costmap_2d.hpp"
 
 #include "geometry_msgs/msg/twist.hpp"
 #include "geometry_msgs/msg/pose_stamped.hpp"
 #include "rclcpp/rclcpp.hpp"
+
+#include "sensor_msgs/msg/laser_scan.hpp"
 
 namespace bt_behavior
 {
@@ -44,12 +47,19 @@ public:
       BT::InputPort<std::vector<std::vector<double>>>("waypoints_vector")
       });
   }
+void callback(const sensor_msgs::msg::LaserScan::SharedPtr msg);
+
 
 private:
   rclcpp::Node::SharedPtr node_;
   rclcpp::Time start_time_;
   rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr vel_pub_;
+
   int counter;
+//  rclcpp::Subscription<nav2_costmap_2d::Costmap2D>::SharedPtr costmap_;
+  rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr lasersub_;
+
+
 };
 
 }  // namespace bt_behavior

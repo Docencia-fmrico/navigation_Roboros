@@ -1,0 +1,19 @@
+[0.017s] Invoking command in '/home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/build/bt_behavior': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jhondl/colcon_ws/install/ros2controlcli:/home/jhondl/colcon_ws/install/launch_pal:/home/jhondl/colcon_ws/install/intro_py_ros2:/opt/ros/foxy /usr/bin/cmake --build /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/build/bt_behavior -- -j12 -l12
+[0.082s] [35m[1mScanning dependencies of target br2_move_bt_node[0m
+[0.093s] [ 12%] Built target gtest
+[0.098s] [ 25%] Built target gtest_main
+[0.113s] [ 50%] Built target br2_patrol_bt_node
+[0.113s] [ 50%] Built target br2_obstacledetection_bt_node
+[0.115s] [ 62%] Built target patrolling_main
+[0.126s] [ 75%] Built target br2_getwaypoint_bt_node
+[0.142s] [ 81%] [32mBuilding CXX object CMakeFiles/br2_move_bt_node.dir/src/bt_behavior/Move.cpp.o[0m
+[0.147s] [ 93%] Built target bt_action_test
+[0.268s] In file included from [01m[K/home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/bt_behavior/src/bt_behavior/Move.cpp:20[m[K:
+[0.269s] [01m[K/home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/bt_behavior/include/bt_behavior/Move.hpp:27:10:[m[K [01;31m[Kfatal error: [m[Knav_msgs/odometry.hpp: No such file or directory
+[0.269s]    27 | #include [01;31m[K"nav_msgs/odometry.hpp"[m[K
+[0.269s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.269s] compilation terminated.
+[0.271s] make[2]: *** [CMakeFiles/br2_move_bt_node.dir/build.make:63: CMakeFiles/br2_move_bt_node.dir/src/bt_behavior/Move.cpp.o] Error 1
+[0.271s] make[1]: *** [CMakeFiles/Makefile2:181: CMakeFiles/br2_move_bt_node.dir/all] Error 2
+[0.271s] make: *** [Makefile:141: all] Error 2
+[0.273s] Invoked command in '/home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/build/bt_behavior' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jhondl/colcon_ws/install/ros2controlcli:/home/jhondl/colcon_ws/install/launch_pal:/home/jhondl/colcon_ws/install/intro_py_ros2:/opt/ros/foxy /usr/bin/cmake --build /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/build/bt_behavior -- -j12 -l12

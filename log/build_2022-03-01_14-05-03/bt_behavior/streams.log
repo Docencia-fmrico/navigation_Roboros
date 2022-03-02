@@ -1,0 +1,65 @@
+[0.018s] Invoking command in '/home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/build/bt_behavior': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jhondl/colcon_ws/install/ros2controlcli:/home/jhondl/colcon_ws/install/launch_pal:/home/jhondl/colcon_ws/install/intro_py_ros2:/opt/ros/foxy /usr/bin/cmake --build /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/build/bt_behavior -- -j12 -l12
+[0.084s] [35m[1mScanning dependencies of target br2_move_bt_node[0m
+[0.101s] [ 12%] Built target gtest_main
+[0.104s] [ 25%] Built target gtest
+[0.107s] [ 37%] Built target br2_getwaypoint_bt_node
+[0.107s] [ 50%] Built target br2_patrol_bt_node
+[0.109s] [ 62%] Built target patrolling_main
+[0.121s] [ 75%] Built target br2_obstacledetection_bt_node
+[0.133s] [ 81%] [32mBuilding CXX object CMakeFiles/br2_move_bt_node.dir/src/bt_behavior/Move.cpp.o[0m
+[0.149s] [ 93%] Built target bt_action_test
+[4.113s] [100%] [32m[1mLinking CXX shared library libbr2_move_bt_node.so[0m
+[4.354s] [100%] Built target br2_move_bt_node
+[4.367s] Invoked command in '/home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/build/bt_behavior' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jhondl/colcon_ws/install/ros2controlcli:/home/jhondl/colcon_ws/install/launch_pal:/home/jhondl/colcon_ws/install/intro_py_ros2:/opt/ros/foxy /usr/bin/cmake --build /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/build/bt_behavior -- -j12 -l12
+[4.438s] Invoking command in '/home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/build/bt_behavior': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jhondl/colcon_ws/install/ros2controlcli:/home/jhondl/colcon_ws/install/launch_pal:/home/jhondl/colcon_ws/install/intro_py_ros2:/opt/ros/foxy /usr/bin/cmake --install /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/build/bt_behavior
+[4.449s] -- Install configuration: "Debug"
+[4.449s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/lib/libbr2_patrol_bt_node.so
+[4.453s] -- Set runtime path of "/home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/lib/libbr2_patrol_bt_node.so" to ""
+[4.453s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/lib/libbr2_move_bt_node.so
+[4.457s] -- Set runtime path of "/home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/lib/libbr2_move_bt_node.so" to ""
+[4.457s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/lib/libbr2_getwaypoint_bt_node.so
+[4.459s] -- Set runtime path of "/home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/lib/libbr2_getwaypoint_bt_node.so" to ""
+[4.459s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/lib/libbr2_obstacledetection_bt_node.so
+[4.461s] -- Set runtime path of "/home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/lib/libbr2_obstacledetection_bt_node.so" to ""
+[4.461s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/lib/bt_behavior/patrolling_main
+[4.463s] -- Set runtime path of "/home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/lib/bt_behavior/patrolling_main" to ""
+[4.463s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/launch
+[4.464s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/launch/patrolling.launch.py
+[4.464s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/config
+[4.464s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/config/waypoints.yaml
+[4.464s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/include/
+[4.464s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/include//bt_behavior
+[4.464s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/include//bt_behavior/ObstacleAvoidance.hpp
+[4.464s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/include//bt_behavior/ctrl_support
+[4.465s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/include//bt_behavior/ctrl_support/BTLifecycleCtrlNode.hpp
+[4.465s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/include//bt_behavior/ctrl_support/BTActionNode.hpp
+[4.465s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/include//bt_behavior/GetWaypoint.hpp
+[4.465s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/include//bt_behavior/Move.hpp
+[4.465s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/include//bt_behavior/ObstacleDetection.hpp
+[4.465s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/include//bt_behavior/Patrol.hpp
+[4.465s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/behavior_tree_xml
+[4.465s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/behavior_tree_xml/simple.xml
+[4.466s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/behavior_tree_xml/notSoSimple.xml
+[4.466s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/behavior_tree_xml/behavior.xml
+[4.466s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/behavior_tree_xml/simple2.xml
+[4.466s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/behavior_tree_xml/simple_patrol.xml
+[4.466s] -- Up-to-date: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/launch
+[4.466s] -- Up-to-date: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/launch/patrolling.launch.py
+[4.466s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/share/ament_index/resource_index/package_run_dependencies/bt_behavior
+[4.466s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/share/ament_index/resource_index/parent_prefix_path/bt_behavior
+[4.466s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/environment/ament_prefix_path.sh
+[4.466s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/environment/ament_prefix_path.dsv
+[4.466s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/environment/path.sh
+[4.467s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/environment/path.dsv
+[4.467s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/local_setup.bash
+[4.467s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/local_setup.sh
+[4.467s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/local_setup.zsh
+[4.467s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/local_setup.dsv
+[4.467s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/package.dsv
+[4.467s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/share/ament_index/resource_index/packages/bt_behavior
+[4.467s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.467s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.468s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/cmake/bt_behaviorConfig.cmake
+[4.468s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/cmake/bt_behaviorConfig-version.cmake
+[4.468s] -- Installing: /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/install/bt_behavior/share/bt_behavior/package.xml
+[4.471s] Invoked command in '/home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/build/bt_behavior' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jhondl/colcon_ws/install/ros2controlcli:/home/jhondl/colcon_ws/install/launch_pal:/home/jhondl/colcon_ws/install/intro_py_ros2:/opt/ros/foxy /usr/bin/cmake --install /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/build/bt_behavior

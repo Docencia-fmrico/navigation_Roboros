@@ -1,0 +1,23 @@
+[0.018s] Invoking command in '/home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/build/bt_behavior': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jhondl/colcon_ws/install/ros2controlcli:/home/jhondl/colcon_ws/install/launch_pal:/home/jhondl/colcon_ws/install/intro_py_ros2:/opt/ros/foxy /usr/bin/cmake --build /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/build/bt_behavior -- -j12 -l12
+[0.083s] [35m[1mScanning dependencies of target br2_move_bt_node[0m
+[0.097s] [ 12%] Built target gtest_main
+[0.102s] [ 25%] Built target gtest
+[0.110s] [ 37%] Built target br2_obstacledetection_bt_node
+[0.110s] [ 50%] Built target br2_patrol_bt_node
+[0.114s] [ 62%] Built target patrolling_main
+[0.119s] [35m[1mScanning dependencies of target bt_action_test[0m
+[0.126s] [ 75%] Built target br2_getwaypoint_bt_node
+[0.131s] [ 81%] [32mBuilding CXX object CMakeFiles/br2_move_bt_node.dir/src/bt_behavior/Move.cpp.o[0m
+[0.175s] [ 87%] [32mBuilding CXX object tests/CMakeFiles/bt_action_test.dir/bt_action_test.cpp.o[0m
+[0.255s] In file included from [01m[K/home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/bt_behavior/src/bt_behavior/Move.cpp:20[m[K:
+[0.255s] [01m[K/home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/bt_behavior/include/bt_behavior/Move.hpp:27:10:[m[K [01;31m[Kfatal error: [m[Knav2_msgs/odometry.hpp: No such file or directory
+[0.255s]    27 | #include [01;31m[K"nav2_msgs/odometry.hpp"[m[K
+[0.255s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.255s] compilation terminated.
+[0.257s] make[2]: *** [CMakeFiles/br2_move_bt_node.dir/build.make:63: CMakeFiles/br2_move_bt_node.dir/src/bt_behavior/Move.cpp.o] Error 1
+[0.258s] make[1]: *** [CMakeFiles/Makefile2:181: CMakeFiles/br2_move_bt_node.dir/all] Error 2
+[0.258s] make[1]: *** Waiting for unfinished jobs....
+[7.585s] [ 93%] [32m[1mLinking CXX executable bt_action_test[0m
+[8.067s] [ 93%] Built target bt_action_test
+[8.068s] make: *** [Makefile:141: all] Error 2
+[8.070s] Invoked command in '/home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/build/bt_behavior' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jhondl/colcon_ws/install/ros2controlcli:/home/jhondl/colcon_ws/install/launch_pal:/home/jhondl/colcon_ws/install/intro_py_ros2:/opt/ros/foxy /usr/bin/cmake --build /home/jhondl/Documents/universidad/2021/Planificacion/colcon_ws/src/navigation_Roboros/build/bt_behavior -- -j12 -l12

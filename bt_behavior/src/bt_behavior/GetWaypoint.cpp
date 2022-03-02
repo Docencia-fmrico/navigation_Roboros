@@ -16,16 +16,17 @@
 #include <iostream>
 
 #include "bt_behavior/GetWaypoint.hpp"
+ #include "nav2_costmap_2d/costmap_2d.hpp"
 
 #include "behaviortree_cpp_v3/behavior_tree.h"
 
 #include "geometry_msgs/msg/twist.hpp"
 #include "geometry_msgs/msg/pose_stamped.hpp"
-
 #include "rclcpp/rclcpp.hpp"
 
 namespace bt_behavior
 {
+using std::placeholders::_1;
 
 using namespace std::chrono_literals;
 
@@ -36,6 +37,14 @@ GetWaypoint::GetWaypoint(
 {
   config().blackboard->get("node", node_);
   counter = 0;
+  //costmap_ = node_->create_subscription<nav2_costmap_2d::Costmap2D>(
+  //  "scan_raw", 10,std::bind(&GetWaypoint::callback, this, _1));
+  lasersub_ = node_->create_subscription<sensor_msgs::msg::LaserScan>(
+    "scan_raw", 10, std::bind(&GetWaypoint::callback, this, _1));
+}
+
+void GetWaypoint::callback(const sensor_msgs::msg::LaserScan::SharedPtr msg){
+
 }
 
 void
