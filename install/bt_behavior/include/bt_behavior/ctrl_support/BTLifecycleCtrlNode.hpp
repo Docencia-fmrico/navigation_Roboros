@@ -1,1 +1,0 @@
-/home/carlos/colcon.ws/src/navigation_Roboros/bt_behavior/include/bt_behavior/ctrl_support/BTLifecycleCtrlNode.hpp
