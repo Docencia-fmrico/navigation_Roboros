@@ -35,7 +35,7 @@ Recharge::Recharge(
 {
   // no se cual sub es
   batterysub_ = rclcpp::create_subscription<sensor_msgs::msg::BatteryState>(
-    "?", 10, std::bind(&Recharge::callback, this, _1));
+    "?", 10, std::bind(&Recharge::callback, this, std::placeholders::std::placeholders::_1));
   Batterycharge=false;
 }
 
@@ -53,7 +53,7 @@ Recharge::tick()
   }
 }
 
-void callback(const sensor_msgs::msg::BatteryState::SharedPtr msg){
+void Recharge::callback(const sensor_msgs::msg::BatteryState::SharedPtr msg){
   // uint8 POWER_SUPPLY_STATUS_FULL = 4
   if (msg->power_supply_status == 4) {
     Batterycharge = true;

@@ -30,18 +30,22 @@
 namespace bt_behavior
 {
 
-class BatteryChecker : public BT::SyncActionNode
+class BatteryChecker : public BT::ActionNodeBase
 {
 public:
   explicit BatteryChecker(
     const std::string & xml_tag_name,
     const BT::NodeConfiguration & conf);
 
-  void halt();
-  BT::NodeStatus tick() override;
+  void halt() ;
+  BT::NodeStatus tick();
   void callback(const sensor_msgs::msg::BatteryState::SharedPtr msg);
 
 
+  static BT::PortsList providedPorts()
+  {
+    return BT::PortsList({});
+  }
 
 private:
   bool Batterycharge;

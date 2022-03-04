@@ -31,7 +31,8 @@ BatteryChecker::BatteryChecker(
 {
   // no se cual sub es
   batterysub_ = rclcpp::create_subscription<sensor_msgs::msg::BatteryState>(
-    "?", 10, std::bind(&BatteryChecker::callback, this, _1));
+  "?", 10, std::bind(&BatteryChecker::callback, this,std::placeholders::_1));
+
   Batterycharge=false;
 }
 
@@ -51,7 +52,7 @@ BatteryChecker::tick()
   }
 }
 
-void callback(const sensor_msgs::msg::BatteryState::SharedPtr msg){
+void BatteryChecker::callback(const sensor_msgs::msg::BatteryState::SharedPtr msg){
   // BATTERY_LOW= 4 or BATTERY_CRITICAL= 5
   if (msg->power_supply_status == 4 || msg->power_supply_status == 5) {
     Batterycharge = true;
@@ -65,5 +66,5 @@ void callback(const sensor_msgs::msg::BatteryState::SharedPtr msg){
 #include "behaviortree_cpp_v3/bt_factory.h"
 BT_REGISTER_NODES(factory)
 {
-  factory.registerNodeType<BatteryChecker>("BatteryChecker");
+  factory.registerNodeType<bt_behavior::BatteryChecker>("BatteryChecker");
 }

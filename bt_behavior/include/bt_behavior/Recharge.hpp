@@ -33,9 +33,14 @@ public:
     const std::string & xml_tag_name,
     const BT::NodeConfiguration & conf);
 
-  void halt();
+  void halt() override;
   BT::NodeStatus tick();
   void callback(const sensor_msgs::msg::BatteryState::SharedPtr msg);
+
+  static BT::PortsList providedPorts()
+  {
+    return BT::PortsList({});
+  }
 
   bool Batterycharge;
 private:
