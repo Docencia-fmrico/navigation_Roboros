@@ -19,13 +19,14 @@
 
 #include "behaviortree_cpp_v3/behavior_tree.h"
 #include "behaviortree_cpp_v3/bt_factory.h"
- #include "nav2_costmap_2d/costmap_2d.hpp"
+ #include "nav2_msgs/msg/costmap.hpp"
 
 #include "geometry_msgs/msg/twist.hpp"
 #include "geometry_msgs/msg/pose_stamped.hpp"
 #include "rclcpp/rclcpp.hpp"
 
 #include "sensor_msgs/msg/laser_scan.hpp"
+#include "nav_msgs/msg/occupancy_grid.hpp"
 
 namespace bt_behavior
 {
@@ -47,17 +48,17 @@ public:
       BT::InputPort<std::vector<std::vector<double>>>("waypoints_vector")
       });
   }
-void callback(const sensor_msgs::msg::LaserScan::SharedPtr msg);
+//void callback(const nav2_msgs::msg::Costmap::SharedPtr msg);
+void callback(const nav_msgs::msg::OccupancyGrid::SharedPtr msg);
+int if_obstacle(geometry_msgs::msg::Pose point);
 
 
 private:
   rclcpp::Node::SharedPtr node_;
   rclcpp::Time start_time_;
-  rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr vel_pub_;
-
+  nav_msgs::msg::OccupancyGrid::SharedPtr occupancy_grid_;
   int counter;
-//  rclcpp::Subscription<nav2_costmap_2d::Costmap2D>::SharedPtr costmap_;
-  rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr lasersub_;
+  rclcpp::Subscription<nav_msgs::msg::OccupancyGrid>::SharedPtr costmap_;
 
 
 };
