@@ -12,16 +12,13 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#ifndef BT_BEHAVIOR__PATROL_HPP_
-#define BT_BEHAVIOR__PATROL_HPP_
+#ifndef BT_BEHAVIOR__OBSTACLEAVOIDANCE_HPP_
+#define BT_BEHAVIOR__OBSTACLEAVOIDANCE_HPP_
 
 #include <string>
-
 #include "behaviortree_cpp_v3/behavior_tree.h"
 #include "behaviortree_cpp_v3/bt_factory.h"
-
 #include "geometry_msgs/msg/twist.hpp"
-
 #include "rclcpp/rclcpp.hpp"
 
 namespace bt_behavior
@@ -50,4 +47,4 @@ private:
 
 }  // namespace bt_behavior
 
-#endif  // BT_BEHAVIOR__PATROL_HPP_
+#endif  // BT_BEHAVIOR__OBSTACLEAVOIDANCE_HPP_

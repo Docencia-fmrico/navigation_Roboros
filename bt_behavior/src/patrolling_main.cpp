@@ -60,12 +60,12 @@ int main(int argc, char * argv[])
   factory.registerFromPlugin(loader.getOSName("br2_obstacledetection_bt_node"));
 
   std::string pkgpath = ament_index_cpp::get_package_share_directory("bt_behavior");
-  std::string xml_file = pkgpath + "/behavior_tree_xml/simple.xml";
+  std::string xml_file = pkgpath + "/behavior_tree_xml/simple3.xml";
 
   auto blackboard = BT::Blackboard::create();
   blackboard->set("node", node);
   std::cout << waypoints_vector.size() << std::endl;
-  blackboard->set("waypoints_vector",waypoints_vector);
+  blackboard->set("waypoints_vector", waypoints_vector);
   BT::Tree tree = factory.createTreeFromFile(xml_file, blackboard);
 
   auto publisher_zmq = std::make_shared<BT::PublisherZMQ>(tree, 10, 2666, 2667);

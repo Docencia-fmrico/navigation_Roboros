@@ -47,13 +47,10 @@ public:
       BT::InputPort<geometry_msgs::msg::PoseStamped>("goal")
     };
   }
+
 private:
   rclcpp::Time start_time_;
-
 };
-
-
-
 }  // namespace bt_behavior
 
 #endif  // BT_BEHAVIOR__MOVE_HPP_

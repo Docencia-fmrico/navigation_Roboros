@@ -16,15 +16,14 @@
 #define BT_BEHAVIOR__GETWAYPOINT_HPP_
 
 #include <string>
+#include <vector>
 
 #include "behaviortree_cpp_v3/behavior_tree.h"
 #include "behaviortree_cpp_v3/bt_factory.h"
- #include "nav2_msgs/msg/costmap.hpp"
-
+#include "nav2_msgs/msg/costmap.hpp"
 #include "geometry_msgs/msg/twist.hpp"
 #include "geometry_msgs/msg/pose_stamped.hpp"
 #include "rclcpp/rclcpp.hpp"
-
 #include "sensor_msgs/msg/laser_scan.hpp"
 #include "nav_msgs/msg/occupancy_grid.hpp"
 
@@ -43,15 +42,14 @@ public:
 
   static BT::PortsList providedPorts()
   {
-    return BT::PortsList({
-      BT::OutputPort<geometry_msgs::msg::PoseStamped>("waypoint"),
-      BT::InputPort<std::vector<std::vector<double>>>("waypoints_vector")
+    return BT::PortsList(
+      {
+        BT::OutputPort<geometry_msgs::msg::PoseStamped>("waypoint"),
+        BT::InputPort<std::vector<std::vector<double>>>("waypoints_vector")
       });
   }
-//void callback(const nav2_msgs::msg::Costmap::SharedPtr msg);
-void callback(const nav_msgs::msg::OccupancyGrid::SharedPtr msg);
-int if_obstacle(geometry_msgs::msg::Pose point);
-
+  void callback(const nav_msgs::msg::OccupancyGrid::SharedPtr msg);
+  int if_obstacle(geometry_msgs::msg::Pose point);
 
 private:
   rclcpp::Node::SharedPtr node_;
@@ -59,8 +57,6 @@ private:
   nav_msgs::msg::OccupancyGrid::SharedPtr occupancy_grid_;
   int counter;
   rclcpp::Subscription<nav_msgs::msg::OccupancyGrid>::SharedPtr costmap_;
-
-
 };
 
 }  // namespace bt_behavior

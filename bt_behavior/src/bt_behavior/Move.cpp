@@ -44,21 +44,24 @@ Move::on_tick()
 {
   start_time_ = node_->now();
   geometry_msgs::msg::PoseStamped goal;
-  std::cout << "Moving to waypoint!!!" << std::endl;
 
   getInput("goal", goal);
+  goal.header.stamp = node_->now();
+  goal.header.frame_id = "/odom";
+  std::cout << "Moving to waypoint***" << goal.header.frame_id << " " << std::endl;
 
   goal_.pose = goal;
 }
 
-void Move::on_wait_for_result(){
+void Move::on_wait_for_result()
+{
   auto elapsed = node_->now() - start_time_;
 
   if (elapsed < 2s) {
     std::cout << "hi" << std::endl;
   } else {
     std::cout << "FINISH" << std::endl;
-      halt();
+    halt();
   }
 }
 
