@@ -62,6 +62,7 @@ int main(int argc, char * argv[])
   std::string pkgpath = ament_index_cpp::get_package_share_directory("bt_behavior");
   std::string xml_file = pkgpath + "/behavior_tree_xml/simple3.xml";
 
+
   auto blackboard = BT::Blackboard::create();
   blackboard->set("node", node);
   std::cout << waypoints_vector.size() << std::endl;
