@@ -30,9 +30,9 @@ def generate_launch_description():
         ],
         remappings=[
           ('input_scan', '/scan_raw'),
-          #/commands/velocity kobuki
-          #('output_vel', '/mobile_base_controller/cmd_vel_unstamped') tiago
-          ('output_vel', '/commands/velocity') 
+          # /commands/velocity kobuki
+          # ('output_vel', '/mobile_base_controller/cmd_vel_unstamped') tiago
+          ('output_vel', '/commands/velocity')
         ],
         output='screen'
     )

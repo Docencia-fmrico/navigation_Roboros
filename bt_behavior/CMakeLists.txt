@@ -16,6 +16,7 @@ find_package(lifecycle_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(nav2_msgs REQUIRED)
 find_package(ament_index_cpp REQUIRED)
+find_package(nav_msgs REQUIRED)
 
 find_package(ZMQ)
 if(ZMQ_FOUND)
@@ -44,11 +45,13 @@ include_directories(include ${ZMQ_INCLUDE_DIRS})
 add_library(br2_patrol_bt_node SHARED src/bt_behavior/Patrol.cpp)
 add_library(br2_move_bt_node SHARED src/bt_behavior/Move.cpp)
 add_library(br2_getwaypoint_bt_node SHARED src/bt_behavior/GetWaypoint.cpp)
+add_library(br2_obstacledetection_bt_node SHARED src/bt_behavior/ObstacleDetection.cpp)
 
 list(APPEND plugin_libs
   br2_patrol_bt_node
   br2_move_bt_node
   br2_getwaypoint_bt_node
+  br2_obstacledetection_bt_node
 )
 
 foreach(bt_plugin ${plugin_libs})

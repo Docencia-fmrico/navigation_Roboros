@@ -24,7 +24,7 @@
 #include "bt_behavior/ctrl_support/BTActionNode.hpp"
 #include "behaviortree_cpp_v3/behavior_tree.h"
 #include "behaviortree_cpp_v3/bt_factory.h"
-
+#include "nav_msgs/msg/odometry.hpp"
 namespace bt_behavior
 {
 
@@ -37,6 +37,8 @@ public:
     const BT::NodeConfiguration & conf);
 
   void on_tick() override;
+  void on_wait_for_result() override;
+
   BT::NodeStatus on_success() override;
 
   static BT::PortsList providedPorts()
@@ -45,8 +47,10 @@ public:
       BT::InputPort<geometry_msgs::msg::PoseStamped>("goal")
     };
   }
-};
 
+private:
+  rclcpp::Time start_time_;
+};
 }  // namespace bt_behavior
 
 #endif  // BT_BEHAVIOR__MOVE_HPP_

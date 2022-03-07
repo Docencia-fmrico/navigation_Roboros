@@ -48,7 +48,8 @@ def generate_launch_description():
     #              https://github.com/ros2/launch_ros/issues/56
     remappings = [('/tf', 'tf'),
                   ('/tf_static', 'tf_static'),
-                  ('/cmd_vel', '/commands/velocity')
+                  #('/cmd_vel', '/commands/velocity')
+                  ('/cmd_vel', '/commands/veloci')
                   ]
 
     # Create our own temporary YAML files that include substitutions
