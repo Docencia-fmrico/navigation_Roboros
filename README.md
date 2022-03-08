@@ -26,11 +26,11 @@ Habrá dos rondas:
 - Ronda 2: Habrá 3-7 waypoints, alguno de ellos en la posición de un obstáculo. En este caso, se podrá ir al siguiente en cuanto se detecte este caso.
 
 ## Resolución
-## Behaviour Tree
+### Behaviour Tree
 
 ![image](https://user-images.githubusercontent.com/60138852/157194430-83111665-e6d4-4f97-97ab-3bc545c21f34.png)
 
-## Obstacle avoidance
+### Obstacle avoidance
 
 Nuestra aproximación para evitar los puntos con obstáculos pensamos primeramente en comprobar si el punto estaba en un obstáculo subscribiéndonos a global_costmap, comprobamos que en simulador con tiago funcionaba sin problema, pero el kobuki parece que no publica este costmap, para sobrepasar este problema, pasamos a poner un timeout desde que se manda el goal, si se vence el tiempo pasa al siguiente punto.
 
