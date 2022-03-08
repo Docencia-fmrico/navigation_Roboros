@@ -32,7 +32,34 @@ Habrá dos rondas:
 
 ### Obstacle avoidance
 
-Nuestra aproximación para evitar los puntos con obstáculos pensamos primeramente en comprobar si el punto estaba en un obstáculo subscribiéndonos a global_costmap, comprobamos que en simulador con tiago funcionaba sin problema, pero el kobuki parece que no publica este costmap, para sobrepasar este problema, pasamos a poner un timeout desde que se manda el goal, si se vence el tiempo pasa al siguiente punto.
+Nuestra aproximación para evitar los puntos con obstáculos pensamos primeramente en comprobar si el punto estaba en un obstáculo subscribiéndonos a global_costmap, comprobamos que en simulador con tiago funcionaba sin problema, pero el kobuki parece que no publica este costmap, para sobrepasar este problema.
+```
+int GetWaypoint::if_obstacle(geometry_msgs::msg::Pose point)
+{
+  if (occupancy_grid_ == NULL) {
+    return -1;
+  }
+  if (point.position.x < occupancy_grid_->info.origin.position.x ||
+    point.position.y < occupancy_grid_->info.origin.position.y)
+  {
+    std::cout << "Out of boundaries" << std::endl;
+    return 1;
+  }
+  int point_map_x = ((point.position.x - occupancy_grid_->info.origin.position.x) *
+    (1.0 / occupancy_grid_->info.resolution ));
+  int point_map_y = ((point.position.y - occupancy_grid_->info.origin.position.y) *
+    (1.0 / occupancy_grid_->info.resolution ));
+  int point_map = (occupancy_grid_->info.width * point_map_y) + point_map_x;
+  std::cout << point_map_x << " : " << point_map_y << std::endl;
+  if (occupancy_grid_->data[point_map] == 0) {
+    std::cout << "free" << std::endl;
+    return 0;
+  }
+  std::cout << "obstacle" << std::endl;
+  return 1;
+}
+```
+Pasamos a poner un timeout desde que se manda el goal, si se vence el tiempo pasa al siguiente punto.
 
 Utilizando las funciones de la clase BTActionNode:
 ```
