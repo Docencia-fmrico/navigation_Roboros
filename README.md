@@ -40,7 +40,7 @@ void Move::on_wait_for_result()
 {
   auto elapsed = node_->now() - start_time_;
 
-  if (elapsed < 2s) {
+  if (elapsed < 60s) {
     std::cout << "hi" << std::endl;
   } else {
     std::cout << "FINISH" << std::endl;
@@ -48,3 +48,4 @@ void Move::on_wait_for_result()
   }
 }
 ```
+
