@@ -24,3 +24,8 @@ Habrá dos rondas:
 
 - Ronda 1: Habrá 4 waypoints, y ninguno en la posición de un obstáculo.
 - Ronda 2: Habrá 3-7 waypoints, alguno de ellos en la posición de un obstáculo. En este caso, se podrá ir al siguiente en cuanto se detecte este caso.
+
+
+## Behaviour Tree
+
+![image](https://user-images.githubusercontent.com/60138852/157194430-83111665-e6d4-4f97-97ab-3bc545c21f34.png)
