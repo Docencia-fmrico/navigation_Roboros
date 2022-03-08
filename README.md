@@ -29,3 +29,22 @@ Habrá dos rondas:
 ## Behaviour Tree
 
 ![image](https://user-images.githubusercontent.com/60138852/157194430-83111665-e6d4-4f97-97ab-3bc545c21f34.png)
+
+##Obstacle avoidance
+
+Nuestra aproximación para evitar los puntos con obstáculos pensamos primeramente en comprobar si el punto estaba en un obstáculo subscribiéndonos a global_costmap, comprobamos que en simulador con tiago funcionaba sin problema, pero el kobuki parece que no publica este costmap, para sobrepasar este problema, pasamos a poner un timeout desde que se manda el goal, si se vence el tiempo pasa al siguiente punto.
+
+Utilizando las funciones de la clase BTActionNode:
+```
+void Move::on_wait_for_result()
+{
+  auto elapsed = node_->now() - start_time_;
+
+  if (elapsed < 2s) {
+    std::cout << "hi" << std::endl;
+  } else {
+    std::cout << "FINISH" << std::endl;
+    halt();
+  }
+}
+```
